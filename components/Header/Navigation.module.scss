@@ -1,0 +1,79 @@
+@import "../../styles/helpers/mixins.scss";
+
+.container {
+  display: flex;
+  align-items: center;
+
+  @include large_tablet {
+    position: absolute;
+    top: 86px;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background-color: var(--white);
+    opacity: 0;
+    pointer-events: none;
+    z-index: 5;
+    box-shadow: 0 0.25rem 16px 0.25rem rgba(0, 0, 0, 0.1);
+  }
+
+  &_open {
+    @include large_tablet {
+      pointer-events: all;
+      animation: fadeIn 0.5s forwards;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    width: 100%;
+
+    @include large_tablet {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      column-gap: 1rem;
+      gap: unset;
+    }
+  }
+
+  &__list_item {
+    cursor: pointer;
+    position: relative;
+    padding: 0.75rem 0;
+
+    @include large_tablet {
+      width: 100%;
+    }
+
+    &:hover {
+      filter: var(--filter-red);
+    }
+  }
+
+  &__list_item_active {
+    position: relative;
+    cursor: pointer;
+    filter: var(--filter-red);
+  }
+
+  &__list_link {
+    cursor: pointer;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    font-size: 1rem;
+    width: 100%;
+    text-align: left;
+    transition: all 0.5s;
+
+    & div {
+      cursor: pointer;
+    }
+  }
+}

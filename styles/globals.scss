@@ -1,0 +1,103 @@
+@import "./helpers/normalize.scss";
+@import "./helpers/mixins.scss";
+@import "./helpers/checkbox.scss";
+@import "./helpers/buttons.scss";
+@import "./helpers/icons.scss";
+@import "./helpers/animations.scss";
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+body {
+  background-image: url("../public/assets/pattern.webp");
+  height: 1080px;
+
+  @include desktop {
+    height: 100vh;
+  }
+
+  @include large_tablet {
+    height: unset;
+  }
+}
+
+.no_scroll {
+  overflow: hidden;
+}
+
+#__next {
+  height: 1080px;
+
+  @include desktop {
+    height: 100vh;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  flex-grow: 1;
+}
+
+* {
+  box-sizing: border-box;
+  --white: #fff;
+  --black: #252525;
+  --red: rgb(222, 16, 10);
+  --red-dark: #b30300;
+  --yellow: #fde7aa;
+  --yellow-light: #FFF4F4;
+  --yellow-dark: #FBCB44;
+  --grey: #a1a1a1;
+  --pink: #f7cfcf;
+  --pink-light: rgb(243, 212, 212);
+  --grey-light: rgb(236, 236, 236);
+
+  --header-height: 80px;
+  --content-max-width: 1600px;
+  --filter-red: invert(10%) sepia(100%) saturate(7491%) hue-rotate(2deg) brightness(91%) contrast(93%);
+  --filter-white: invert(98%) sepia(100%) saturate(10%) hue-rotate(197deg) brightness(104%) contrast(102%);
+  --filter-grey: invert(66%) sepia(12%) saturate(8%) hue-rotate(355deg) brightness(27%) contrast(86%);
+
+  --box-shadow: 0 0 16px 0.25rem rgba(0, 0, 0, 0.1);
+  --box-shadow-small: 0 0 0.5rem 0.07rem rgba(0,0,0,0.1);
+  --box-shadow-small-red: 0 0 0.5rem 0.07rem rgba(255, 0, 0, 0.2);
+  --red-gradient: linear-gradient(217deg, var(--red), rgba(255,0,0,0) 70.71%),
+  linear-gradient(127deg, var(--red-dark), rgba(0,255,0,0) 70.71%),
+  linear-gradient(336deg, var(--red-dark), rgba(0,0,255,0) 70.71%);
+  --pink-gradient: linear-gradient(217deg, var(--pink-light), rgba(255,0,0,0) 70.71%),
+  linear-gradient(127deg, var( --pink), rgba(0,255,0,0) 70.71%),
+  linear-gradient(336deg, var( --pink), rgba(0,0,255,0) 70.71%);
+}
+
+.layout {
+  max-width: 1920px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 1080px;
+
+  @include desktop {
+    height: 100vh;
+  }
+}
+
+.fadeOut {
+  animation: fadeOut 0.5s ease-out forwards;
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.selected {
+  filter: var(--filter-red);
+}
+
+.hide {
+  display: none !important;
+}

@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem;
+  border: 0.07rem solid transparent;
+  line-height: 140%;
+  color: var(--black);
+  align-self: flex-start;
+
+  &_error {
+    border: 0.07rem solid red;
+  }
+}
+
+.label {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  align-items: center;
+  gap: 0.75rem;
+
+  & p {
+    cursor: pointer;
+  }
+
+  &__link {
+    cursor: pointer;
+    display: inline-block;
+    font-size: inherit;
+    color: var(--red);
+  }
+}

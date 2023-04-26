@@ -1,0 +1,49 @@
+@import "../../styles/helpers/mixins.scss";
+
+.container {
+  display: none;
+
+  @include large_tablet {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  
+    width: 28px;
+    height: 18px;
+  }
+}
+
+.stick {
+  width: 100%;
+  height: 2px;
+  background-image: url("../../public/assets/stick.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  &__top {
+    transition: all 0.25s;
+
+    &_open {
+      transform: rotate(40deg) translate(3.5px, 9.5px);
+    }
+  }
+
+  &__middle {
+    transition: all 1s;
+
+    &_open {
+      transform: rotate(40deg) translate(-1.5px, 3.5px);
+      opacity: 0;
+    }
+  }
+
+  &__bottom {
+    transition: all 1s;
+
+    &_open {
+      transform: rotate(-45deg) translate(1.5px, -7.5px);
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@import "./mixins.scss";
+
+.close, .return {
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  padding: 0.5rem;
+  z-index: 2;
+
+  background-image: url("../../public/assets/cross.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  outline: none;
+  border: none;
+  background-color: transparent;
+
+  &_s {
+    padding: 0.45rem;
+  }
+
+  &_b {
+    padding: 0.55rem;
+  }
+}
+
+.return {
+  right: unset;
+  left: 1rem;
+  padding: 0.6rem;
+  background-image: url("../../public/assets/arrow_rotate_left.svg");
+}
+
+.hide_mobile {
+  @include large_mobile {
+    display: none;
+  }
+}

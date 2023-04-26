@@ -1,0 +1,28 @@
+input[type=checkbox] {
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent; 
+  margin: 0;
+
+  color: currentColor;
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 0.07rem solid currentColor;
+
+  display: grid;
+  place-content: center;
+}
+
+input[type=checkbox]::before {
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  transform: scale(0);
+  box-shadow: inset 1rem 1rem var(--red);
+  transition: 120ms transform ease-in-out;
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(0.7);
+}

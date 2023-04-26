@@ -1,0 +1,127 @@
+h1, h2, h3, p, ul, ol, a, table, tr, th, td {
+  cursor: default;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: inherit;
+}
+
+/* make buttons and links non selectable */
+button, a {
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+button:disabled {
+  background-image: unset;
+  box-shadow: var(--box-shadow-small);
+ 
+  & div {
+    opacity: 0.4;
+  }
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+input,
+textarea,
+button,
+select,
+p,
+li,
+h1,
+h2,
+h3,
+span,
+div,
+input,
+label,
+a {
+  -webkit-tap-highlight-color: transparent;
+  font-family: "Montserrat", "Verdana", "sans-serif";
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  line-height: 160%;
+}
+
+a {
+  cursor: pointer;
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+a:focus,
+a:visited,
+a:active {
+  outline: none;
+}
+
+body {
+  margin: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* enabled scrollbar for div */
+
+  div::-webkit-scrollbar {
+    background-color: rgba(247, 207, 207, 0.25);
+    width: 0.75rem;
+  }
+
+  .lty-playbtn {
+    cursor: pointer;
+  }
+    
+  div::-webkit-scrollbar-track {
+  }
+    
+  div::-webkit-scrollbar-thumb {
+    background-color: rgba(247, 207, 207, 0.1);
+    box-shadow: inset 0 0 0.33rem rgba(0, 0, 0, 0.1);
+  }
+  
+  /* disable scrollbar on demand */
+  .no_scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+    overflow: none;
+
+    &::-webkit-scrollbar {
+      width: 1px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent;
+    }
+  }
+
+  .no_scrollbar::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+  }
+
+  .non_selectable {
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+  }
