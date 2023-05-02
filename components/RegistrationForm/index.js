@@ -33,8 +33,6 @@ export default function RegistrationForm({
   const [showInputs, setShowInputs] = useState(false);
 
   const setUser = useContext(SetUserCtx);
-  const acc = useContext(AccCtx);
-  const setAcc = useContext(SetAccCtx);
 
   function handleSubmit() {
     showInputs
@@ -46,8 +44,6 @@ export default function RegistrationForm({
           setAuthErrors,
           authErrors,
           setUser,
-          setAcc,
-          acc,
           handlePush,
           payload,
           passwordHint,

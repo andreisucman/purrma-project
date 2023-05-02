@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
     <Layout>
       <Header />
       <main id="body" className={`${font.className} main`}>
-        <CustomComponent Component={Component} pageProps={pageProps} />;
+        <CustomComponent Component={Component} pageProps={pageProps} />
       </main>
     </Layout>
   );

@@ -76,7 +76,7 @@ export default function Navigation({
           }
         >
           <button
-            onClick={() => handleRedirect("/report")}
+            onClick={() => (window.location.href = "https://purrma.com")}
             className={styles.container__list_link}
           >
             <div
@@ -86,15 +86,9 @@ export default function Navigation({
             App
           </button>
         </li>
-        <li
-          className={
-            activeLink === "/sisters"
-              ? `${styles.container__list_item} ${styles.container__list_item_active}`
-              : `${styles.container__list_item}`
-          }
-        >
+        <li className={styles.container__list_item}>
           <button
-            onClick={() => handleRedirect("/sisters")}
+            onClick={() => handleRedirect("/login")}
             className={styles.container__list_link}
           >
             <div

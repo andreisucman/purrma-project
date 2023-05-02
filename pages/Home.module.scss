@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  &__wrapper {
+    background-color: rgba(247, 207, 207, 0.5);
+  }
+}

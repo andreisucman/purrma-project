@@ -107,7 +107,7 @@ export function LoginForm({
         </p>
         <p
           className={`${styles.container__forgot_password} non_selectable`}
-          onClick={() => router.push("/")}
+          onClick={() => router.push("/register")}
         >
           Register
         </p>
