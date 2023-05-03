@@ -1,0 +1,61 @@
+@import "../../styles/helpers/mixins.scss";
+
+.container {
+  cursor: default;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include large_mobile {
+    top: 10%;
+  }
+
+  &__wrapper {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+    max-width: 28rem;
+    width: 100%;
+    border-radius: 0.5rem;
+ 
+    @include large_mobile {
+      box-sizing: border-box;
+      margin: 0 0.5rem;
+      padding: 1rem
+    }
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    font-size: 1.75rem;
+    padding: 1rem;
+    text-align: center;
+    color: var(--black);
+
+    @include mobile {
+      font-size: 1.75rem;
+    }
+  }
+}
+
+.login_link {
+  cursor: pointer;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+  color: var(--black);
+  transition: all 0.5s;
+
+  &:hover {
+    color: var(--red);
+  }
+}

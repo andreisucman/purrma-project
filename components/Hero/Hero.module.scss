@@ -1,0 +1,66 @@
+@import "../../styles/helpers/mixins.scss";
+
+.container {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  padding: 2rem 2rem 3.75rem;
+
+  @include large_tablet {
+    padding: 2rem 0;
+  }
+}
+
+.image {
+  background-color: rgba($color: #faecec, $alpha: 0.75);
+  box-shadow: var(--box-shadow);
+  padding: 2rem 1rem;
+  border-radius: 0.5rem;
+  object-fit: contain;
+
+  @include large_tablet {
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+   }
+}
+
+.slogan {
+  background-color: rgba($color: #fff, $alpha: 0.95);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+
+  position: absolute;
+  bottom: 0;
+
+  @include large_mobile {
+    transform: translateY(50%);
+  }
+
+  &__first {
+    font-weight: 600;
+    font-size: 2rem;
+
+    @include large_mobile {
+      font-size: 1.75rem;
+    }
+  }
+
+  &__second {
+    font-size: 1.5rem;
+
+    & span {
+      font-size: 1.75rem;
+      font-weight: bold;
+      text-decoration: underline;
+      color: var(--red);
+
+      @include large_mobile {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
