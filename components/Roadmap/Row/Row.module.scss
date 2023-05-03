@@ -1,0 +1,41 @@
+@import "../../../styles/helpers/mixins.scss";
+
+.container {
+  position: relative;
+  
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+.circle {
+  position: relative;
+  z-index: 1;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+
+  background-color: var(--red);
+
+  &_cur {
+    border: 0.2rem dashed black;
+  }
+
+  &_fut {
+    background-color: var(--grey-light);
+  }
+}
+
+.line {
+  width: 7rem;
+  height: 2rem;
+  background-color: var(--red);
+  
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  transform: translate(-150%, -140%);
+}

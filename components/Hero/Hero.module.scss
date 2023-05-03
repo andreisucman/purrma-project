@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   padding: 2rem 2rem 3.75rem;
+  background-color: rgba($color: #f3d4d4, $alpha: 0.5);
 
   @include large_tablet {
     padding: 2rem 0;
@@ -13,7 +14,7 @@
 }
 
 .image {
-  background-color: rgba($color: #faecec, $alpha: 0.75);
+  background-color: rgba($color: #fff, $alpha: 1);
   box-shadow: var(--box-shadow);
   padding: 2rem 1rem;
   border-radius: 0.5rem;

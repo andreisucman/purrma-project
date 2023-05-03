@@ -1,0 +1,81 @@
+@import "../../styles/helpers/mixins.scss";
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 6rem 0 4rem;
+  
+
+  @include large_mobile {
+    margin-top: 5rem;
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    max-width: 100rem;
+    border-radius: 0.5rem;
+
+    background-color: rgba($color: #fff, $alpha: 1);
+    box-shadow: var(--box-shadow-small);
+  }
+}
+
+.row {
+  display: flex;
+  margin: auto;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 100%;
+
+  @include large_tablet {
+    padding: unset;
+    gap: unset;
+    flex-direction: column;
+
+    &:first-child {
+      padding-top: 1rem;
+    }
+  }
+}
+
+.slogan {
+  background-color: rgba($color: #fff, $alpha: 0.95);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  width: 75%;
+  max-width: 20rem;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-48%, -60%);
+
+  &__first {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  &__second {
+    font-size: 1.5rem;
+
+    & span {
+      font-size: 1.75rem;
+      font-weight: bold;
+      text-decoration: underline;
+      color: var(--red);
+
+      @include large_mobile {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+
