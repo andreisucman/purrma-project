@@ -34,15 +34,14 @@
   display: flex;
   margin: auto;
 
-  padding: 1rem;
   border-radius: 0.5rem;
-  max-width: 80rem;
+  max-width: 90rem;
   width: 100%;
-  gap: 2rem;
+  gap: 1rem;
 
   @include large_tablet {
     flex-direction: column;
-    padding: 2rem 1rem 1rem;
+    padding: 0;
     gap: 1.5rem;
   }
 
@@ -72,7 +71,7 @@
 
   &__text {
     padding-right: 0.5rem;
-    flex-basis: 50%;
+    flex-basis: 70%;
 
     @include large_mobile {
       margin-top: 1.5rem;
@@ -89,16 +88,7 @@
   object-fit: contain;
   width: 100%;
   border-radius: 0.5rem;
-
-  @include large_tablet {
-    height: fit-content;
-    max-width: 30rem;
-  }
-
-  @include mobile {
-    width: 100%;
-  }
-
+  height: fit-content;
   
   &__div {
     display: flex;

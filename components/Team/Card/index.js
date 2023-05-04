@@ -13,7 +13,7 @@ export default function Card({ data }) {
           className={styles.img}
           src={img}
           alt={`${name} purrma`}
-          height={450}
+          height={350}
         />
       </div>
       <div className={styles.block__text}>
@@ -36,7 +36,7 @@ export default function Card({ data }) {
                 className={`${styles.timeline__circle} ${styles.timeline__circle_active}`}
               />
             </div>
-            <span>{title}</span>
+            <span>{title} (Purrma)</span>
           </div>
           <div className={styles.timeline__step}>
             <div className={styles.timeline__bar}>

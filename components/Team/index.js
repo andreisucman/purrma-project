@@ -5,6 +5,7 @@ import man1 from "../../public/assets/team/man1.png";
 import man2 from "../../public/assets/team/man2.png";
 import woman1 from "../../public/assets/team/woman1.png";
 import woman2 from "../../public/assets/team/woman2.png";
+import SectionTitle from "../common/SectionTitle";
 import styles from "./Team.module.scss";
 
 export default function Team() {
@@ -12,15 +13,13 @@ export default function Team() {
     <div className={styles.container}>
       <div className={styles.container__wrapper}>
         <div className={styles.row}>
-          <div className={styles.slogan}>
-            <h1 className={styles.slogan__first}>The core team</h1>
-          </div>
+          <SectionTitle icon={"icon icon__team icon_b"} title={"The team"} />
           <Card
             data={{
               name: "Andrei Sucman",
               img: man1,
               title: "Team Manager",
-              about: `Andrei has 3 years of corporate experience sales and marketing roles
+              about: `Andrei has 3 years of corporate experience in sales and marketing
               and 2 years of entrepreneural experience with ecommerce.`,
               desc: `At Purrma Andrei is responsible for planning, setting, monitoring
               milestones and answering customer service requests.`,
@@ -62,7 +61,7 @@ export default function Team() {
               name: "Daniel Blyth",
               img: man2,
               title: "IT Manager",
-              about: `Daniel is full-stack developer with over X years of experience in
+              about: `Daniel is a full-stack developer with X years of experience in
               building software with nodejs and the parse-platform.`,
               desc: `At Purrma Daniel is responsible for the development and
               maintainance of the technical infrastructure.`,
@@ -82,7 +81,7 @@ export default function Team() {
               img: woman2,
               title: "Marketing Manager",
               about: `Eysan is a Gen Z influencer and a talented marketing specialist
-              with over 1.5 years of professional experience.`,
+              with 1.5 years of professional experience.`,
               desc: `At Purrma Eysan is responsible for developing promotional
               activities, and building brand identity.`,
               links: {

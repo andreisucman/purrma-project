@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  
+  background-color: rgba($color: #fff, $alpha: 0.95);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  width: 95%;
+  max-width: 20rem;
+  font-size: 1.5rem;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+
+.text {
+  font-weight: 600;
+  font-size: 1.5rem;
+}

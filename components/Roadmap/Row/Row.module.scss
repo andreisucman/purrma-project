@@ -16,10 +16,11 @@
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
+  background-color: #F5AFAC;
 
-  background-color: var(--red);
-
+  
   &_cur {
+    background-color: var(--red);
     border: 0.2rem dashed black;
   }
 

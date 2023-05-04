@@ -73,6 +73,26 @@
     background-image: url("../../public/assets/money_curved_white.svg");
   }
 
+  &__money {
+    background-image: url("../../public/assets/money.svg");
+  }
+
+  &__web {
+    background-image: url("../../public/assets/web.svg");
+  }
+
+  &__apple {
+    background-image: url("../../public/assets/apple.svg");
+  }
+
+  &__policy {
+    background-image: url("../../public/assets/policy.svg");
+  }
+
+  &__android {
+    background-image: url("../../public/assets/android.svg");
+  }
+
   &__open_door {
     background-image: url("../../public/assets/open_door.svg");
   }
@@ -87,6 +107,18 @@
 
   &__eye {
     background-image: url("../../public/assets/eye.svg");
+  }
+
+  &__pin {
+    background-image: url("../../public/assets/pin.svg");
+  }
+
+  &__user {
+    background-image: url("../../public/assets/user.svg");
+  }
+
+  &__dry_food {
+    background-image: url("../../public/assets/dry_food.svg");
   }
 
   &__eye_crossed {

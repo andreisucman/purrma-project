@@ -4,12 +4,14 @@ import check_quality from "../../public/assets/explanation/check_quality.png";
 import get_deliveries from "../../public/assets/explanation/get_deliveries.png";
 import pay_reward from "../../public/assets/explanation/pay_reward.png";
 import take_orders from "../../public/assets/explanation/take_orders.png";
+import SectionTitle from "../common/SectionTitle";
 import styles from "./Explanation.module.scss";
 
 export default function Explanation() {
   return (
     <div className={styles.container}>
       <div className={styles.container__wrapper}>
+        <SectionTitle title={"The platform"} icon={"icon icon__user"} />
         <div className={styles.block}>
           <div className={styles.img__div}>
             <Image
@@ -77,25 +79,25 @@ export default function Explanation() {
           </div>
         </div>
         <div className={styles.block}>
-          <div className={styles.block__text}>
-            <h3 className={styles.block__title}>4. Pay out the rewards</h3>
-            <p className={styles.paragraph}>
-              Each sister gets rewarded for every successful delivery. The
-              rewards are funded from the mothers' orders.
-            </p>
-            <p className={styles.paragraph}>
-              To get their reward the sisters complete a one-time KYC check that
-              includes identity and address verification, the first time they
-              initiate a withdrawal.
-            </p>
-          </div>
           <div className={styles.img__div}>
             <Image
               className={styles.img}
               src={pay_reward}
-              alt="purrma pay reward"
+              alt="purrma check quality"
               height={450}
             />
+          </div>
+          <div className={styles.block__text}>
+            <h3 className={styles.block__title}>4. Pay out the rewards</h3>
+            <p className={styles.paragraph}>
+            Each sister gets rewarded for every successful delivery. The
+              rewards are funded from the mothers' orders.
+            </p>
+            <p className={styles.paragraph}>
+            To get their reward the sisters complete a one-time KYC check that
+              includes identity and address verification, the first time they
+              initiate a withdrawal.
+            </p>
           </div>
         </div>
       </div>
