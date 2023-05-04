@@ -1,4 +1,4 @@
-import Explanation from "../components/Explanation";
+import Project from "../components/Project";
 import Hero from "../components/Hero";
 import Team from "../components/Team";
 import Mission from "../components/Mission";
@@ -7,6 +7,7 @@ import FundUs from "../components/FundUs";
 import CheckApp from "../components/CheckApp";
 import Roadmap from "../components/Roadmap";
 import Footer from "../components/Footer";
+import ToTop from "../components/common/ToTop";
 import styles from "./Home.module.scss";
 
 export default function Home() {
@@ -16,11 +17,12 @@ export default function Home() {
         <Hero />
         <Mission />
         <Avatars />
-        <Explanation />
+        <Project />
         <Team />
         <Roadmap />
         <FundUs />
         <CheckApp />
+        <ToTop elementId={"header"} />
         <Footer />
       </div>
     </div>

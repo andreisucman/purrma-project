@@ -7,7 +7,7 @@ export default function Mission() {
         <div className="icon icon__pin" />
         <p>
           Purrma is a platform where mothers and sisters collaborate to feed,
-          protect, and increase the adoption of homeless cats worldwide.
+          protect, and increase the adoption of stray cats worldwide.
         </p>
       </div>
     </div>

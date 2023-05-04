@@ -13,7 +13,7 @@ export default function Team() {
     <div className={styles.container}>
       <div className={styles.container__wrapper}>
         <div className={styles.row}>
-          <SectionTitle icon={"icon icon__team icon_b"} title={"The team"} />
+          <SectionTitle icon={"icon icon__team icon_b"} title={"The team"} id="team" />
           <Card
             data={{
               name: "Andrei Sucman",

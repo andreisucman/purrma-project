@@ -57,6 +57,17 @@ export default function Header() {
     setActiveLink(url);
   }
 
+  function redirectLocally(url) {
+    setActiveLink(url);
+    const id = document.getElementById(url?.split("#")[1]);
+    id.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+      offset: 100,
+    });
+  }
+
   function handleToggleMenu() {
     setIsMenuOpen((prevValue) => !prevValue);
   }
@@ -72,11 +83,14 @@ export default function Header() {
             activeLink={activeLink}
             setActiveLink={setActiveLink}
             handleRedirect={handleRedirect}
+            redirectLocally={redirectLocally}
           />
           {!user && (
             <div className={`${styles.button} ${styles.button__login}`}>
               <div className="icon icon__money_curved_white icon_nav" />
-              <button onClick={() => {}}>Fund us</button>
+              <button onClick={() => redirectLocally("#fund")}>
+                Fund us
+              </button>
             </div>
           )}
           <Burger

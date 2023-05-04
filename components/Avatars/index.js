@@ -6,7 +6,7 @@ import styles from "./Avatars.module.scss";
 
 export default function Avatars() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="project">
       <div className={styles.container__wrapper}>
         <SectionTitle title={"The avatars"} icon={"icon icon__user"} />
         <div className={styles.block}>
@@ -17,7 +17,10 @@ export default function Avatars() {
             className={styles.image}
             alt="mother portrait"
           />
-          <h3 className={styles.name}>Meet the mother</h3>
+          <h3 className={styles.name}>
+            Meet the Mother
+            <div className="icon icon__angel icon_b" />
+          </h3>
           <p className={styles.text}>
             Sarah is a successful businesswoman who has dedicated her life to
             attaining business goals and achieving financial freedom.
@@ -32,8 +35,8 @@ export default function Avatars() {
             lengths to ensure their wellbeing.
           </p>
           <p className={styles.text}>
-            She dreams of a world where all fur babies have a loving home and
-            is ready to support any cause that aims to achieve this.
+            She dreams of a world where all fur babies have a loving home and is
+            ready to support any cause that aims to achieve this.
           </p>
         </div>
         <div className={styles.block}>
@@ -44,7 +47,13 @@ export default function Avatars() {
             className={styles.image}
             alt="sister portrait"
           />
-          <h3 className={styles.name}>Meet the sister</h3>
+          <h3 className={styles.name}>
+            Meet the Sister
+            <div
+              className="icon icon__face icon_b"
+              style={{ backgroundSize: "90%" }}
+            />
+          </h3>
           <p className={styles.text}>
             Maria is a hardworking woman who has always dreamt of having a furry
             companion. Despite of struggling financially, her love for cats has

@@ -7,7 +7,7 @@ const FundUs = () => {
   return (
     <div className={styles.container}>
       <div className={styles.container__wrapper}>
-        <SectionTitle icon={"icon icon__money icon_m"} title={"Fund us"} />
+        <SectionTitle icon={"icon icon__money icon_m"} title={"Fund us"} id="fund"/>
         <div className={styles.content}>
           <Image
             src={token_purrma}
@@ -16,7 +16,7 @@ const FundUs = () => {
             className={styles.image}
           />
           <ul className={styles.info}>
-            <h3 className={styles.subtitle}>Help Purrma if you want to</h3>
+            <h3 className={styles.subtitle}>You can help us if you want to</h3>
             <li className={styles.item}>
               100 000 Purrma tokens are for sale for $1 worth of BNB each
             </li>

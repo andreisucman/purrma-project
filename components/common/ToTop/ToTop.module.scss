@@ -1,0 +1,33 @@
+@import "../../../styles/helpers/mixins.scss";
+
+.container {
+  cursor: pointer;
+  position: fixed;
+  right: 0;
+  bottom: 1.5rem;
+  padding: 1.5rem;
+  width: fit-content;
+  z-index: 1;
+
+  @include large_mobile {
+    bottom: 1rem;
+    padding: 1rem;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    color: var(--white);
+    padding: 1.5rem;
+    
+    background-image: url("../../../public/assets/arrow_up.svg");
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+    
+    &:hover {
+      filter: var(--filter-red)
+    }
+  }
+}

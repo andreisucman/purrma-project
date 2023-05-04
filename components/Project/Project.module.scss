@@ -11,7 +11,6 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
     max-width: 90rem;
     width: calc(100vw - 1rem);
     background-color: var(--white);
@@ -36,9 +35,10 @@
 .block {
   display: flex;
   margin: auto;
-  padding: 2rem;
+  padding: 1rem 2rem;
   border-radius: 0.5rem;
   gap: 2rem;
+  width: 100%;
 
   @include large_tablet {
     padding: 1rem 1rem 0;
@@ -60,7 +60,7 @@
     }
 
     &:last-child {
-      flex-direction: column-reverse;
+      flex-direction: column;
     }
   }
 
@@ -99,10 +99,10 @@
   @include large_tablet {
     height: fit-content;
     max-width: 30rem;
+    width: 100%;
   }
 
   @include mobile {
-    width: 100%;
   }
 
   

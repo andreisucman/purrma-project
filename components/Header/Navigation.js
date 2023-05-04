@@ -4,14 +4,9 @@ export default function Navigation({
   menuRef,
   isMenuOpen,
   activeLink,
-  setActiveLink,
   handleRedirect,
+  redirectLocally,
 }) {
-  function redirectLocally(url) {
-    setActiveLink(url);
-    const id = document.getElementById(url?.split("#")[1]);
-    id.scrollIntoView({ behavior: "smooth" });
-  }
   return (
     <nav
       ref={menuRef}
@@ -39,13 +34,13 @@ export default function Navigation({
         </li>
         <li
           className={
-            activeLink === "/news"
+            activeLink === "#team"
               ? `${styles.container__list_item} ${styles.container__list_item_active}`
               : `${styles.container__list_item}`
           }
         >
           <button
-            onClick={() => handleRedirect("/news")}
+            onClick={() => redirectLocally("#team")}
             className={styles.container__list_link}
           >
             <div className="icon icon__team icon_m" />
@@ -54,13 +49,13 @@ export default function Navigation({
         </li>
         <li
           className={
-            activeLink === "/mothers"
+            activeLink === "#roadmap"
               ? `${styles.container__list_item} ${styles.container__list_item_active}`
               : `${styles.container__list_item}`
           }
         >
           <button
-            onClick={() => handleRedirect("/mothers")}
+            onClick={() => redirectLocally("#roadmap")}
             className={styles.container__list_link}
           >
             <div className="icon icon__map_pin icon__nav" />
@@ -70,13 +65,13 @@ export default function Navigation({
 
         <li
           className={
-            activeLink === "/report"
+            activeLink === "#app"
               ? `${styles.container__list_item} ${styles.container__list_item_active}`
               : `${styles.container__list_item}`
           }
         >
           <button
-            onClick={() => (window.location.href = "https://purrma.com")}
+            onClick={() => redirectLocally("#app")}
             className={styles.container__list_link}
           >
             <div

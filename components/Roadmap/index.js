@@ -15,7 +15,7 @@ const Roadmap = () => {
   return (
     <div className={styles.container}>
       <div className={styles.container__wrapper}>
-        <SectionTitle icon={"icon icon__map_pin icon_m"} title={"The roadmap"} />
+        <SectionTitle icon={"icon icon__map_pin icon_m"} title={"The roadmap"} id="roadmap"/>
         <div className={styles.content}>
           {roadmap.map((m, i) => (
             <React.Fragment key={i}>

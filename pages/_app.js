@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { Montserrat } from "next/font/google";
 import TagManager from "react-gtm-module";
 import Header from "../components/Header";
@@ -21,7 +21,7 @@ function MyApp({ Component, pageProps }) {
     <Layout>
       <Header />
       <main id="body" className={`${font.className} main`}>
-        <CustomComponent Component={Component} pageProps={pageProps} />
+        <CustomComponent Component={Component} pageProps={...pageProps} />
       </main>
     </Layout>
   );

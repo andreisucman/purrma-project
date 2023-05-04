@@ -11,6 +11,7 @@ const CheckApp = () => {
         <SectionTitle
           icon={"icon icon__rocket icon_m"}
           title={"Check the app"}
+          id="app"
         />
         <div className={styles.content}>
           <Image
@@ -22,15 +23,15 @@ const CheckApp = () => {
           <div className={styles.buttons}>
             <button className={styles.button}>
               <div className="icon icon__apple icon_m" />
-              From App store
+              Apple store
             </button>
             <button className={styles.button}>
               <div className="icon icon__android icon_m" />
-              From Galaxy store
+              Galaxy store
             </button>
             <button className={styles.button}>
               <div className="icon icon__web" />
-              Visit the web version
+              Web app
             </button>
           </div>
           <Image
