@@ -6,7 +6,13 @@ export default function Navigation({
   activeLink,
   handleRedirect,
   redirectLocally,
+  deviceType,
+  router,
 }) {
+  function handleLocalRedirect(url) {
+    const returnFirst = router.pathname !== "/";
+    redirectLocally(url, returnFirst);
+  }
   return (
     <nav
       ref={menuRef}
@@ -26,7 +32,7 @@ export default function Navigation({
         >
           <button
             className={styles.container__list_link}
-            onClick={() => redirectLocally("#project")}
+            onClick={() => handleLocalRedirect("#project")}
           >
             <div className="icon icon__heart_outline icon_nav" />
             Project
@@ -40,7 +46,7 @@ export default function Navigation({
           }
         >
           <button
-            onClick={() => redirectLocally("#team")}
+            onClick={() => handleLocalRedirect("#team")}
             className={styles.container__list_link}
           >
             <div className="icon icon__team icon_m" />
@@ -55,13 +61,30 @@ export default function Navigation({
           }
         >
           <button
-            onClick={() => redirectLocally("#roadmap")}
+            onClick={() => handleLocalRedirect("#roadmap")}
             className={styles.container__list_link}
           >
             <div className="icon icon__map_pin icon__nav" />
             Roadmap
           </button>
         </li>
+        {deviceType !== "desktop" && (
+          <li
+            className={
+              activeLink === "#fund"
+                ? `${styles.container__list_item} ${styles.container__list_item_active}`
+                : `${styles.container__list_item}`
+            }
+          >
+            <button
+              onClick={() => handleLocalRedirect("#fund")}
+              className={styles.container__list_link}
+            >
+              <div className="icon icon__money icon__nav" />
+              Fund us
+            </button>
+          </li>
+        )}
 
         <li
           className={
@@ -71,7 +94,7 @@ export default function Navigation({
           }
         >
           <button
-            onClick={() => redirectLocally("#app")}
+            onClick={() => handleLocalRedirect("#app")}
             className={styles.container__list_link}
           >
             <div

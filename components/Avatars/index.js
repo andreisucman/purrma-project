@@ -6,9 +6,13 @@ import styles from "./Avatars.module.scss";
 
 export default function Avatars() {
   return (
-    <div className={styles.container} id="project">
+    <div className={styles.container}>
       <div className={styles.container__wrapper}>
-        <SectionTitle title={"The avatars"} icon={"icon icon__user"} />
+        <SectionTitle
+          title={"The avatars"}
+          icon={"icon icon__user"}
+          id="project"
+        />
         <div className={styles.block}>
           <Image
             height={400}

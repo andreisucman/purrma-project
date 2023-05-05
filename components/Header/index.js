@@ -5,6 +5,7 @@ import Navigation from "./Navigation";
 import Burger from "./Burger";
 import Logo from "./Logo";
 import { UserCtx } from "../../state/UserCtx";
+import { getDeviceType } from "../../functions/getDeviceType";
 import { useHandleClickOutside } from "../../functions/useHandleClickOutside";
 import styles from "./Header.module.scss";
 
@@ -15,6 +16,13 @@ export default function Header() {
   const menuRef = useRef();
   const burgerRef = useRef();
   const user = useContext(UserCtx);
+  const returnFirstRef = useRef(router.pathname !== "/");
+
+  const [deviceType, setDeviceType] = useState();
+
+  useEffect(() => {
+    setDeviceType(getDeviceType());
+  }, []);
 
   useEffect(() => {
     redirectToLogin();
@@ -57,15 +65,34 @@ export default function Header() {
     setActiveLink(url);
   }
 
-  function redirectLocally(url) {
-    setActiveLink(url);
-    const id = document.getElementById(url?.split("#")[1]);
-    id.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-      inline: "nearest",
-      offset: 100,
-    });
+  function redirectLocally(url, returnFirst) {
+    const el = document.getElementById(url?.split("#")[1]);
+    returnFirst ? returnFirst(url) : redirectDirectly(url);
+
+    function returnFirst(url) {
+      setActiveLink(url);
+      router.push("/");
+
+      const tId = setTimeout(() => {
+        el.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest",
+          offset: 100,
+        });
+        clearTimeout(tId);
+      }, 250);
+    }
+
+    function redirectDirectly(url) {
+      setActiveLink(url);
+      el.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest",
+        offset: 100,
+      });
+    }
   }
 
   function handleToggleMenu() {
@@ -84,13 +111,13 @@ export default function Header() {
             setActiveLink={setActiveLink}
             handleRedirect={handleRedirect}
             redirectLocally={redirectLocally}
+            deviceType={deviceType}
+            router={router}
           />
           {!user && (
             <div className={`${styles.button} ${styles.button__login}`}>
               <div className="icon icon__money_curved_white icon_nav" />
-              <button onClick={() => redirectLocally("#fund")}>
-                Fund us
-              </button>
+              <button onClick={() => redirectLocally("#fund")}>Fund us</button>
             </div>
           )}
           <Burger

@@ -6,6 +6,10 @@
   background-color: rgba($color: #f3d4d4, $alpha: 0.5);
   padding-bottom: 3rem;
 
+  @include large_tablet {
+    padding-bottom: 5.5rem;
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column;

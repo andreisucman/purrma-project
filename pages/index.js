@@ -6,7 +6,7 @@ import Avatars from "../components/Avatars";
 import FundUs from "../components/FundUs";
 import CheckApp from "../components/CheckApp";
 import Roadmap from "../components/Roadmap";
-import Footer from "../components/Footer";
+import Footer from "../components/common/Footer";
 import ToTop from "../components/common/ToTop";
 import styles from "./Home.module.scss";
 

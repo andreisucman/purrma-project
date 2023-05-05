@@ -9,6 +9,10 @@
   justify-content: center;
   background-color: rgba($color: #f3d4d4, $alpha: 0.5);
 
+  @include large_tablet {
+    padding-bottom: 5.5rem;
+  }
+
   &__wrapper {
     position: relative;
 

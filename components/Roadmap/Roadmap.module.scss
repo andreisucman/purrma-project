@@ -6,8 +6,11 @@
 
   display: flex;
   justify-content: center;
-  // background-color: rgba($color: #f3d4d4, $alpha: 0.5);
   background-color: rgba($color: #fff, $alpha: 0.5);
+
+  @include large_tablet {
+    padding-bottom: 0;
+  }
 
   &__wrapper {
     position: relative;

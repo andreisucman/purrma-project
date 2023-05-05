@@ -8,6 +8,10 @@
   justify-content: center;
   padding-top: 5.5rem;
 
+  @include large_tablet {
+    padding-top: 0rem;
+  }
+
   &__wrapper {
     position: relative;
     width: 100%;
