@@ -13,7 +13,11 @@ export default function Team() {
     <div className={styles.container}>
       <div className={styles.container__wrapper}>
         <div className={styles.row}>
-          <SectionTitle icon={"icon icon__team icon_b"} title={"The team"} id="team" />
+          <SectionTitle
+            icon={"icon icon__team icon_b"}
+            title={"The team"}
+            id="team"
+          />
           <Card
             data={{
               name: "Andrei Sucman",
@@ -38,7 +42,7 @@ export default function Team() {
               name: "Name Surname",
               img: woman1,
               title: "Finance Manager",
-              about: `Irem has 5 years of corporate experience in audit, product
+              about: `Name has 5 years of corporate experience in audit, product
               management and business development.`,
               desc: `At Purrma Name is responsible for financial compliance,
               reporting, and P&L management.`,
