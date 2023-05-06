@@ -100,7 +100,7 @@ export default function Navigation({
           >
             <div
               className="icon icon__envelope"
-              style={{ backgroundSize: "85%", marginRight: "-0.15rem" }}
+              style={{ backgroundSize: "95%" }}
             />
             Contact
           </button>
