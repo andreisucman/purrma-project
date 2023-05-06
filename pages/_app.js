@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { useEffect } from "react";
 import TagManager from "react-gtm-module";
 import Header from "../components/Header";
@@ -11,10 +12,17 @@ function MyApp({ Component, pageProps }) {
   }, []);
 
   return (
-    <Layout>
-      <Header />
-      <CustomComponent Component={Component} pageProps={...pageProps} />
-    </Layout>
+    <>
+      <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"/>
+      </Head>
+      <Layout>
+        <Header />
+        <CustomComponent Component={Component} pageProps={...pageProps} />
+      </Layout>
+    </>
   );
 }
 
