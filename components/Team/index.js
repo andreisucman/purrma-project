@@ -45,7 +45,7 @@ export default function Team() {
               about: `Name has 5 years of corporate experience in audit, product
               management and business development.`,
               desc: `At Purrma Name is responsible for financial compliance,
-              reporting, and P&L management.`,
+              P&L management, and business development.`,
               links: {
                 ln: "/",
               },
