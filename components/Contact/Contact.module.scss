@@ -31,7 +31,7 @@
   padding: 3.5rem 2rem 2rem;
   width: calc(100vw - 1rem);
 
-  @include mobile {
+  @include large_mobile {
     padding: 3.5rem 1rem 2rem;
     max-width: unset
   }
@@ -105,7 +105,7 @@
     flex-basis: 70%;
     text-align: center;
 
-    @include mobile {
+    @include large_mobile {
       padding: 0 0.5rem;
     }
   }
