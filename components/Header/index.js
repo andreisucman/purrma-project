@@ -1,10 +1,8 @@
-import useSWR from "swr";
 import { useRouter } from "next/router";
-import { useState, useEffect, useRef, useContext } from "react";
+import { useState, useEffect, useRef } from "react";
 import Navigation from "./Navigation";
 import Burger from "./Burger";
 import Logo from "./Logo";
-import { UserCtx } from "../../state/UserCtx";
 import { getDeviceType } from "../../functions/getDeviceType";
 import { useHandleClickOutside } from "../../functions/useHandleClickOutside";
 import styles from "./Header.module.scss";
@@ -15,7 +13,6 @@ export default function Header() {
   const [activeLink, setActiveLink] = useState(router.pathname);
   const menuRef = useRef();
   const burgerRef = useRef();
-  const user = useContext(UserCtx);
 
   const [deviceType, setDeviceType] = useState();
 
@@ -95,7 +92,6 @@ export default function Header() {
             redirectLocally={redirectLocally}
             deviceType={deviceType}
             router={router}
-            user={user}
           />
           <Burger
             burgerRef={burgerRef}
