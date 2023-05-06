@@ -33,6 +33,21 @@
   }
 }
 
+.account {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+
+  & button, div {
+    cursor: pointer;
+  }
+
+  &:hover {
+    filter: var(--filter-red);
+  }
+}
+
 .button {
   cursor: pointer;
   display: flex;

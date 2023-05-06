@@ -49,8 +49,8 @@ export default function Project() {
               Mothers place orders for feeding cats.
             </p>
             <p className={styles.paragraph}>
-              They select the type of food, and quantity, and decide on whether
-              this food should be served to stray, adopted, or all cats.{" "}
+              They select the type of food, quantity, and decide on whether this
+              food should be served to stray, adopted, or all cats.{" "}
             </p>
             <p className={styles.paragraph}>
               Mothers are acknowledged as angels for promoting stray cat
@@ -62,12 +62,12 @@ export default function Project() {
           <div className={styles.block__text}>
             <h3 className={styles.block__title}>2. Deliver the food</h3>
             <p className={styles.paragraph}>
-              Sisters serve the food that the mothers have ordered. Each delivery
-              gets recorded and uploaded to the platform for quality check.{" "}
+              Sisters serve the food that the mothers have ordered. They record
+              each delivery and upload it to the platform for the quality check.
             </p>
             <p className={styles.paragraph}>
               The sisters get financially rewarded if the check is successful or
-              asked to redeliver the order otherwise.
+              asked to serve the food again otherwise.
             </p>
           </div>
           <div className={styles.img__div}>
@@ -117,8 +117,8 @@ export default function Project() {
             </p>
             <p className={styles.paragraph}>
               These include performance and quality aspects such as the amount of
-              food served, the time given to each cat for eating, and the proof
-              of location and feeding process.
+              food served, the time given to each cat for eating, the proof
+              of location and the video showing the feeding process.
             </p>
           </div>
         </div>

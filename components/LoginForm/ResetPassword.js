@@ -22,7 +22,7 @@ export default function ResetPassword({ setShowResetPassword }) {
       await Parse.User.requestPasswordReset(email);
 
       setEmailNext(
-        "If you have an account with us you should receive an email with the reset link"
+        "If you have an account with us you should receive an email with the reset link shortly."
       );
 
       setTimeout(() => {

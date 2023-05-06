@@ -1,0 +1,18 @@
+.row {
+  box-sizing: border-box;
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr minmax(4rem, auto) minmax(4rem, auto);
+  width: 100%;
+  gap: 1rem;
+
+  &__withdraw {
+    grid-template-columns: auto 1fr minmax(4rem, auto);
+  }
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

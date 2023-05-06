@@ -3,6 +3,7 @@
 @import "./helpers/checkbox.scss";
 @import "./helpers/buttons.scss";
 @import "./helpers/icons.scss";
+@import "./helpers/range.scss";
 @import "./helpers/animations.scss";
 
 html {
@@ -38,7 +39,6 @@ body {
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   width: 100%;
   flex-grow: 1;
 }

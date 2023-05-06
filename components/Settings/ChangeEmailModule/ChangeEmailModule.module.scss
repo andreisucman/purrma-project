@@ -1,0 +1,33 @@
+@import "../../../styles/helpers/mixins.scss";
+
+.container {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 5;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  transform: translateY(-50%);
+
+  &__wrapper {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+
+    width: calc(100vw - 1rem);
+    height: fit-content;
+    max-width: 25rem;
+    background-color: var(--white);
+    box-shadow: var(--box-shadow-small);
+    border-radius: 0.5rem;
+    padding: 1rem;
+  }
+}

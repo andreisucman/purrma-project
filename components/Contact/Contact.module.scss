@@ -1,0 +1,112 @@
+@import "../../styles/helpers/mixins.scss";
+
+.container {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(243, 212, 212, 0.5);
+  padding: 5.5rem 0 2rem;
+  width: 100%;
+
+  &__title {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+}
+
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: "Montserrat", "Verdana", "sans-serif";
+
+  max-width: 37.5rem;
+  background-color: rgba($color: #fff, $alpha: 1);
+  box-shadow: var(--box-shadow-small);
+  border-radius: 0.5rem;
+  padding: 3.5rem 2rem 2rem;
+  width: calc(100vw - 1rem);
+
+  @include mobile {
+    padding: 3.5rem 1rem 2rem;
+    max-width: unset
+  }
+  
+  &__input, &__message {
+    background-color: var(--white);
+
+    border-radius: 0.25rem;
+    padding: 1rem;
+    border: none;
+    resize: none;
+    font-family: inherit;
+    outline: none;
+
+    &:focus {
+      box-shadow: var(--box-shadow-small-red);
+    }
+  }
+
+  &__input {
+    box-shadow: var(--box-shadow-small);
+  }
+
+  &__message {
+    height: 10.625rem;
+    box-shadow: var(--box-shadow-small);
+  }
+
+  &__submit {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    outline: none;
+    background: var(--pink-gradient);
+    background-size: 150%;
+    width: 100%;
+    flex-basis: 30%;
+    margin-left: auto;
+    padding: 1rem 2rem;
+    border-radius: 0.25rem;
+    animation: flipColors 1s forwards;
+    
+    &:hover {
+      animation: flipColorsBack 1s forwards;
+    }
+
+    &:active {
+      box-shadow: var(--box-shadow-small-red);
+    }
+
+    &_wrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    & div {
+      cursor: pointer;
+    }
+  }
+
+  &__submission_message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    flex-basis: 70%;
+    text-align: center;
+
+    @include mobile {
+      padding: 0 0.5rem;
+    }
+  }
+}

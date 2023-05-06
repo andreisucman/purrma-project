@@ -10,7 +10,7 @@ const CheckApp = () => {
       <div className={styles.container__wrapper}>
         <SectionTitle
           icon={"icon icon__rocket icon_m"}
-          title={"Check the app"}
+          title={"Check our app"}
           id="app"
         />
         <div className={styles.content}>
@@ -23,15 +23,18 @@ const CheckApp = () => {
           <div className={styles.buttons}>
             <button className={styles.button}>
               <div className="icon icon__apple icon_m" />
-              Apple store
+              iOS
             </button>
             <button className={styles.button}>
               <div className="icon icon__android icon_m" />
-              Galaxy store
+              Android
             </button>
-            <button className={styles.button}>
+            <button
+              className={styles.button}
+              onClick={() => (window.location.href = "https://purrma.com")}
+            >
               <div className="icon icon__web" />
-              Web app
+              Web
             </button>
           </div>
           <Image

@@ -77,8 +77,40 @@
     background-image: url("../../public/assets/money.svg");
   }
 
+  &__handshake_white {
+    background-image: url("../../public/assets/handshake_white.svg");
+  }
+
+  &__money {
+    background-image: url("../../public/assets/money.svg");
+  }
+
+  &__wallet {
+    background-image: url("../../public/assets/wallet.svg");
+  }
+
+  &__plug {
+    background-image: url("../../public/assets/plug.svg");
+  }
+
+  &__withdraw_money {
+    background-image: url("../../public/assets/withdraw_money.svg");
+  }
+
   &__web {
     background-image: url("../../public/assets/web.svg");
+  }
+
+  &__cloud {
+    background-image: url("../../public/assets/cloud.svg");
+  }
+
+  &__user_money {
+    background-image: url("../../public/assets/user_money.svg");
+  }
+
+  &__pencil_notebook {
+    background-image: url("../../public/assets/pencil_notebook.svg");
   }
 
   &__apple {
@@ -87,6 +119,30 @@
 
   &__face {
     background-image: url("../../public/assets/face.svg");
+  }
+
+  &__envelope_exclamation {
+    background-image: url("../../public/assets/envelope_exclamation.svg");
+  }
+
+  &__envelope {
+    background-image: url("../../public/assets/envelope.svg");
+  }
+
+  &__waving_hand {
+    background-image: url("../../public/assets/waving_hand.svg");
+  }
+
+  &__gear {
+    background-image: url("../../public/assets/gear.svg");
+  }
+
+  &__square_lines {
+    background-image: url("../../public/assets/square_lines.svg");
+  }
+
+  &__dialog_arrow {
+    background-image: url("../../public/assets/dialog_arrow.svg");
   }
 
   &__angel {

@@ -1,3 +1,4 @@
+import ls from "localstorage-slim";
 import { useState, useEffect, createContext } from "react";
 
 export const UserCtx = createContext();

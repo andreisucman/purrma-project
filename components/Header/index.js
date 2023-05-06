@@ -16,7 +16,6 @@ export default function Header() {
   const menuRef = useRef();
   const burgerRef = useRef();
   const user = useContext(UserCtx);
-  const returnFirstRef = useRef(router.pathname !== "/");
 
   const [deviceType, setDeviceType] = useState();
 
@@ -24,34 +23,28 @@ export default function Header() {
     setDeviceType(getDeviceType());
   }, []);
 
-  useEffect(() => {
-    redirectToLogin();
-    redirectToVerify();
-  }, [user]);
+  const path = router.asPath;
 
-  useSWR({}, redirectToVerify);
+  useEffect(() => {
+    if (!router) return;
+
+    setTimeout(() => {
+      const el = document.getElementById(path?.split("/#")[1]);
+
+      if (el) {
+        el.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+          inline: "nearest",
+          offset: 100,
+        });
+      }
+    }, 1000);
+  }, [router, path]);
 
   useEffect(() => {
     setActiveLink(router.pathname);
   }, [router.pathname]);
-
-  function redirectToLogin() {
-    if (!user && typeof user === "object") {
-      router.push("/login");
-    }
-  }
-
-  function redirectToVerify() {
-    if (!user) return;
-
-    if (
-      router.pathname !== "/register" &&
-      router.pathname !== "/login" &&
-      !user.emailVerified
-    ) {
-      router.push({ pathname: "/verify-email", query: { uId: user.objectId } });
-    }
-  }
 
   useHandleClickOutside({
     refOne: menuRef,
@@ -65,23 +58,12 @@ export default function Header() {
     setActiveLink(url);
   }
 
-  function redirectLocally(url, returnFirst) {
+  function redirectLocally(url, ret) {
     const el = document.getElementById(url?.split("#")[1]);
-    returnFirst ? returnFirst(url) : redirectDirectly(url);
+    ret ? returnFirst(url) : redirectDirectly(url);
 
     function returnFirst(url) {
-      setActiveLink(url);
-      router.push("/");
-
-      const tId = setTimeout(() => {
-        el.scrollIntoView({
-          behavior: "smooth",
-          block: "start",
-          inline: "nearest",
-          offset: 100,
-        });
-        clearTimeout(tId);
-      }, 250);
+      router.push(`/${url}`);
     }
 
     function redirectDirectly(url) {
@@ -113,13 +95,8 @@ export default function Header() {
             redirectLocally={redirectLocally}
             deviceType={deviceType}
             router={router}
+            user={user}
           />
-          {!user && (
-            <div className={`${styles.button} ${styles.button__login}`}>
-              <div className="icon icon__money_curved_white icon_nav" />
-              <button onClick={() => redirectLocally("#fund")}>Fund us</button>
-            </div>
-          )}
           <Burger
             burgerRef={burgerRef}
             isMenuOpen={isMenuOpen}

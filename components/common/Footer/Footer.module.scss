@@ -3,8 +3,8 @@
 .container {
   display: flex;
   justify-content: center;
-  background-color: rgba($color: #fff, $alpha: 0.5);
-  padding-bottom: 2rem;
+  background-color: rgba(243, 212, 212, 0.5);
+  padding: 1rem;
 
   &__wrapper {
     display: flex;
@@ -21,26 +21,4 @@
     border-radius: 0.5rem;
     box-shadow: var(--box-shadow-small);
   }
-}
-
-.links {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 0 1rem;
-}
-
-.link {
-  cursor: pointer;
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-
-  & div {
-    cursor: pointer;
-  }
-}
-
-.copyright {
-
 }

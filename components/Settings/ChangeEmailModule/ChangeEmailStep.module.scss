@@ -1,0 +1,45 @@
+@import "../../../styles/helpers/mixins.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.icon {
+  width: 100%;
+  height: 5rem;
+  margin: 0.5rem 0 0.75rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+.input {
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--grey-light);
+  border-radius: 0.25rem;
+}
+
+.button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem; 
+  width: 100%;
+  padding: 1rem 0.5rem;
+  border-radius: 0.25rem;
+  background-color: transparent;
+  box-shadow: var(--box-shadow-small);
+
+  &:active {
+    box-shadow: var(--box-shadow-small-red);
+  }
+}

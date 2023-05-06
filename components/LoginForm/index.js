@@ -21,9 +21,9 @@ export function LoginForm({
 }) {
   const [showResetPassword, setShowResetPassword] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
-  const setUser = useContext(SetUserCtx);
   const [disableBtn, setDisableBtn] = useState(false);
   const [showInputs, setShowInputs] = useState(false);
+  const setUser = useContext(SetUserCtx);
 
   function handleSubmit() {
     showInputs

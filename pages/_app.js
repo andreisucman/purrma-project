@@ -1,8 +1,8 @@
-import { useEffect, useRef } from "react";
 import { Montserrat } from "next/font/google";
 import TagManager from "react-gtm-module";
 import Header from "../components/Header";
 import Layout from "../components/common/Layout";
+import { UserCtxProvider } from "../state/UserCtx";
 import CustomComponent from "../components/common/CustomComponent";
 import "../styles/globals.scss";
 
@@ -19,10 +19,12 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <Layout>
-      <Header />
-      <main id="body" className={`${font.className} main`}>
-        <CustomComponent Component={Component} pageProps={...pageProps} />
-      </main>
+      <UserCtxProvider>
+        <Header />
+        <main id="body" className={`${font.className} main`}>
+              <CustomComponent Component={Component} pageProps={...pageProps} />
+        </main>
+      </UserCtxProvider>
     </Layout>
   );
 }

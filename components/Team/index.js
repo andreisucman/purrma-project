@@ -35,22 +35,22 @@ export default function Team() {
           />
           <Card
             data={{
-              name: "Irem Sena Tekin",
+              name: "Name Surname",
               img: woman1,
               title: "Finance Manager",
               about: `Irem has 5 years of corporate experience in audit, product
               management and business development.`,
-              desc: `At Purrma Irem is responsible for financial compliance,
+              desc: `At Purrma Name is responsible for financial compliance,
               reporting, and P&L management.`,
               links: {
-                ln: "https://www.linkedin.com/in/irem-sena-tekin-797a85a9/?originalSubdomain=tr",
+                ln: "/",
               },
               timeline: {
                 one: {
                   isAct: true,
-                  text: "Business Development Supervisor (Garanti BBVA)",
+                  text: "Business Development Supervisor (Company C)",
                 },
-                two: { text: "Product Manager (Turkcell)" },
+                two: { text: "Product Manager (Company D)" },
               },
             }}
           />
@@ -58,12 +58,12 @@ export default function Team() {
         <div className={styles.row}>
           <Card
             data={{
-              name: "Daniel Blyth",
+              name: "Name Surname",
               img: man2,
               title: "IT Manager",
-              about: `Daniel is a full-stack developer with X years of experience in
-              building software with nodejs and the parse-platform.`,
-              desc: `At Purrma Daniel is responsible for the development and
+              about: `Name is a full-stack developer with X years of experience in
+              building software with nodejs.`,
+              desc: `At Purrma Name is responsible for the development and
               maintainance of the technical infrastructure.`,
               links: {
                 ln: "/",
@@ -77,22 +77,22 @@ export default function Team() {
           />
           <Card
             data={{
-              name: "Eysan Ozgurengin",
+              name: "Name Surname",
               img: woman2,
               title: "Marketing Manager",
-              about: `Eysan is a Gen Z influencer and a talented marketing specialist
+              about: `Name is a Gen Z influencer and a talented marketing specialist
               with 1.5 years of professional experience.`,
-              desc: `At Purrma Eysan is responsible for developing promotional
+              desc: `At Purrma Name is responsible for developing promotional
               activities, and building brand identity.`,
               links: {
-                ln: "https://www.linkedin.com/in/eysanozgurengin/",
+                ln: "/",
               },
               timeline: {
                 one: {
                   isAct: true,
-                  text: "Marketing Specialist (Invent Analytics)",
+                  text: "Marketing Specialist (Company A)",
                 },
-                two: { text: "Marketing Specialist (Pin Global Gida)" },
+                two: { text: "Marketing Specialist (Company B)" },
               },
             }}
           />

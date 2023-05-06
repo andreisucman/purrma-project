@@ -1,0 +1,25 @@
+@import "../../styles/helpers/mixins.scss";
+
+.container {
+  background-color: var(--white);
+  box-shadow: var(--box-shadow-small);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+
+  position: absolute;
+  right: 1.5rem;
+  top: 1rem;
+  display: flex;
+  gap: 0.75rem;
+  z-index: 3;
+  align-items: center;
+
+  @include large_tablet {
+    position: relative;
+    right: unset;
+    top: unset;
+    width: fit-content;
+    align-self: flex-end;
+    padding: 0.75rem;
+  }
+}

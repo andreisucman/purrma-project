@@ -8,11 +8,12 @@ export default function Navigation({
   redirectLocally,
   deviceType,
   router,
+  user,
 }) {
   function handleLocalRedirect(url) {
-    const returnFirst = router.pathname !== "/";
-    redirectLocally(url, returnFirst);
+    redirectLocally(url, router.pathname !== "/");
   }
+
   return (
     <nav
       ref={menuRef}
@@ -68,24 +69,6 @@ export default function Navigation({
             Roadmap
           </button>
         </li>
-        {deviceType !== "desktop" && (
-          <li
-            className={
-              activeLink === "#fund"
-                ? `${styles.container__list_item} ${styles.container__list_item_active}`
-                : `${styles.container__list_item}`
-            }
-          >
-            <button
-              onClick={() => handleLocalRedirect("#fund")}
-              className={styles.container__list_link}
-            >
-              <div className="icon icon__money icon__nav" />
-              Fund us
-            </button>
-          </li>
-        )}
-
         <li
           className={
             activeLink === "#app"
@@ -104,16 +87,22 @@ export default function Navigation({
             App
           </button>
         </li>
-        <li className={styles.container__list_item}>
+        <li
+          className={
+            activeLink === "#app"
+              ? `${styles.container__list_item} ${styles.container__list_item_active}`
+              : `${styles.container__list_item}`
+          }
+        >
           <button
-            onClick={() => handleRedirect("/login")}
+            onClick={() => handleLocalRedirect("#contact")}
             className={styles.container__list_link}
           >
             <div
-              className="icon icon__open_door icon_sm"
-              style={{ marginRight: "-0.25rem", backgroundSize: "90%" }}
+              className="icon icon__envelope"
+              style={{ backgroundSize: "85%", marginRight: "-0.15rem" }}
             />
-            Log in
+            Contact
           </button>
         </li>
       </ul>
