@@ -7,9 +7,9 @@ const Roadmap = () => {
   const roadmap = [
     { desc: "Build and test the app", date: "12 Apr 23" },
     { desc: "Launch organically", isCur: true },
+    { desc: "Launch the first paid ad campaign", isFut: true },
     { desc: "Onboard the first 100 sisters", isFut: true },
     { desc: "Onboard the first 10 mothers", isFut: true },
-    { desc: "Launch the first paid ad campaign", isFut: true },
   ];
 
   return (
