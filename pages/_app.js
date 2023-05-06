@@ -5,7 +5,6 @@ import Layout from "../components/common/Layout";
 import CustomComponent from "../components/common/CustomComponent";
 import "../styles/globals.scss";
 
-
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
     TagManager.initialize({ gtmId: process.env.NEXT_PUBLIC_GTM_ID });
