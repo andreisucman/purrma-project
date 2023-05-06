@@ -21,20 +21,20 @@ const CheckApp = () => {
             className={styles.image}
           />
           <div className={styles.buttons}>
-            <button className={styles.button}>
+          <button
+            className={styles.button}
+            onClick={() => (window.location.href = "https://purrma.com")}
+          >
+            <div className="icon icon__web" />
+            Web
+          </button>
+            <button className={styles.button} disabled={true}>
               <div className="icon icon__apple icon_m" />
-              iOS
+              iOS (soon)
             </button>
-            <button className={styles.button}>
+            <button className={styles.button} disabled={true}>
               <div className="icon icon__android icon_m" />
-              Android
-            </button>
-            <button
-              className={styles.button}
-              onClick={() => (window.location.href = "https://purrma.com")}
-            >
-              <div className="icon icon__web" />
-              Web
+              Android (soon)
             </button>
           </div>
           <Image
