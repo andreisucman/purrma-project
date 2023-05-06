@@ -60,9 +60,12 @@ export default function Avatars() {
           </h3>
           <p className={styles.text}>
             Maria is a hardworking woman who has always dreamt of having a furry
-            companion. Despite of struggling financially, her love for cats has
-            never wavered, but due to the latest surge in cat food prices she has
-            been unable to afford one.
+            companion.
+          </p>
+          <p className={styles.text}>
+            Despite of struggling financially, her love for cats has never
+            wavered, but due to the latest surge in cat food prices she has been
+            unable to afford one.
           </p>
           <p className={styles.text}>
             Maria is a lively and outgoing person, who enjoys jogging in the park
