@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import banner from "../../public/assets/investor_banner.webp";
-import banner_mobile from "../../public/assets/investor_banner_mobile.webp";
+import banner from "../../public/assets/banner.webp";
+import banner_mobile from "../../public/assets/banner_mobile.webp";
 import { getDeviceType } from "../../functions/getDeviceType";
 import styles from "./Hero.module.scss";
 
