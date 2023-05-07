@@ -6,15 +6,15 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  padding-top: 5.5rem;
+  padding: 5.5rem 0 0;
 
   @include large_tablet {
-    padding-top: 0rem;
+    padding: 0 0 5.5rem;
   }
 
   &__wrapper {
     position: relative;
-    width: 100%;
+    width: calc(100vw - 1rem);
 
     display: flex;
     gap: 2rem;
