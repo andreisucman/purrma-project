@@ -19,7 +19,7 @@ export default function Concept() {
         <SectionTitle
           title={"The concept"}
           icon={"icon icon__user"}
-          id="concept"
+          id="project"
         />
         <div className={styles.block}>
           {deviceType === "mobile" ? (

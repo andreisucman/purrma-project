@@ -11,7 +11,6 @@ export default function Avatars() {
         <SectionTitle
           title={"The avatars"}
           icon={"icon icon__user"}
-          id="project"
         />
         <div className={styles.block}>
           <Image

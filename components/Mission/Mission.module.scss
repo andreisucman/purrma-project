@@ -4,10 +4,10 @@
   display: flex;
   justify-content: center;
   background-color: rgba($color: #f3d4d4, $alpha: 0.5);
-  padding-bottom: 3rem;
+  padding: 2rem 0 3rem;
 
   @include large_tablet {
-    padding-bottom: 5.5rem;
+    padding: 2rem 0 7.5rem;
   }
 
   &__wrapper {
