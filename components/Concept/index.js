@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import concept from "../../public/assets/concept.webp";
 import concept_mobile from "../../public/assets/concept_mobile.webp";
+import { getDeviceType } from "../../functions/getDeviceType";
 import SectionTitle from "../common/SectionTitle";
 import styles from "./Concept.module.scss";
 
