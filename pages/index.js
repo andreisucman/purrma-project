@@ -7,6 +7,7 @@ import CheckApp from "../components/CheckApp";
 import Roadmap from "../components/Roadmap";
 import Footer from "../components/common/Footer";
 import Contact from "../components/Contact";
+import Concept from "../components/Concept";
 import ToTop from "../components/common/ToTop";
 import styles from "./Home.module.scss";
 
@@ -16,6 +17,7 @@ export default function Home() {
       <div className={styles.container__wrapper}>
         <Hero />
         <Mission />
+        <Concept />
         <Avatars />
         <Project />
         <Team />

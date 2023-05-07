@@ -18,7 +18,7 @@
 
     display: flex;
     gap: 2rem;
-    max-width: 80rem;
+    max-width: 90rem;
     justify-content: center;
 
     padding: 2rem;
@@ -37,29 +37,9 @@
 }
 
 .block {
-  max-width: 30rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.name {
-  font-size: 1.5rem;
-  padding: 0.5rem 0;
-  margin-right: auto;
-
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-
-  @include large_tablet {
-    margin: unset;
-  }
-}
-
-.text {
-  padding: 0.5rem 0;
-  width: 100%;
 }
 
 .image {
