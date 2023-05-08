@@ -4,12 +4,30 @@
   position: relative;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   padding: 2rem 2rem 3.75rem;
   background-color: rgba($color: #f3d4d4, $alpha: 0.5);
 
   @include large_tablet {
     padding: 2rem 0;
+  }
+
+  &__wrapper {
+    position: relative;
+    min-height: 45rem;
+    background-image: url("../../public/assets/banner.webp");
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.5rem;
+
+    @include tablet {
+      min-height: 28rem;
+      background-image: url("../../public/assets/banner_mobile.webp");
+    }
   }
 }
 
@@ -36,12 +54,11 @@
 
   position: absolute;
   bottom: 0;
-
-  @include large_mobile {
-    transform: translateY(50%);
-  }
+  left: 50%;
+  transform: translate(-50%, 50%);
 
   &__first {
+    white-space: nowrap;
     display: flex;
     align-items: center;
     gap: 1rem;
