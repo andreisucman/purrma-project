@@ -17,7 +17,7 @@
     position: relative;
     min-height: 45rem;
     background-image: url("../../public/assets/banner.webp");
-    background-size: 80%;
+    background-size: 90%;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
@@ -27,7 +27,7 @@
     @include tablet {
       min-height: 28rem;
       background-image: url("../../public/assets/banner_mobile.webp");
-      background-size: contain;
+      background-size: 90%;
     }
   }
 }
