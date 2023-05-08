@@ -30,13 +30,36 @@ export default function Concept() {
               alt="purrma concept"
             />
           ) : (
-            <Image
-              width="auto"
-              src={concept}
-              className={styles.image}
-              alt="purrma concept"
-            />
+            <Image src={concept} className={styles.image} alt="purrma concept" />
           )}
+          <div className={styles.text}>
+            <div className={styles.paragraph}>
+              <h3 className={styles.paragraph__title}>
+                <div className="icon icon__angel" />
+                Mothers
+              </h3>
+              Mothers sponsor the feeding of cats. They are recognized as angels
+              for saving feline lives and receive exclusive non-purchasable items
+              and experiences as a reward for their contributions.
+            </div>
+            <div className={styles.paragraph}>
+              <h3 className={styles.paragraph__title}>
+                <div className="icon icon__face" />
+                Sisters
+              </h3>
+              Sisters procure the food that mothers have sponsored and deliver it
+              to cats for a financial reward that is also covered by mothers.
+            </div>
+            <div className={styles.paragraph}>
+              <h3 className={styles.paragraph__title}>
+                <div className="icon icon__heart_outline" />
+                Purrma
+              </h3>
+              Purrma connects mothers and sisters, checks the quality of each
+              sister's work and features their statistics on a leaderboard and
+              personal account pages.
+            </div>
+          </div>
         </div>
       </div>
     </div>

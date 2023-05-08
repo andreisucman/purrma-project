@@ -8,10 +8,7 @@ export default function Avatars() {
   return (
     <div className={styles.container}>
       <div className={styles.container__wrapper}>
-        <SectionTitle
-          title={"The avatars"}
-          icon={"icon icon__user"}
-        />
+        <SectionTitle title={"The avatars"} icon={"icon icon__user"} />
         <div className={styles.block}>
           <Image
             height={400}
@@ -41,6 +38,23 @@ export default function Avatars() {
             She dreams of a world where all fur babies have a loving home and is
             ready to support any cause that aims to achieve this.
           </p>
+          <div className={styles.motivation}>
+            <div className={styles.motivation__title}>
+              <div className="icon icon__spark" />
+              Motivation
+            </div>
+            <ul className={styles.motivation__list}>
+              <li>
+                A strong desire to take care and protect homeless cats and cats
+                in general
+              </li>
+              <li>A willingness to get recognized for saving cats' lives</li>
+              <li>
+                A willingness to get exclusive items and experiences not
+                available for buy
+              </li>
+            </ul>
+          </div>
         </div>
         <div className={styles.block}>
           <Image
@@ -76,6 +90,19 @@ export default function Avatars() {
             afford a cat of her own, and give her all the love and care she
             deserves.
           </p>
+          <div className={styles.motivation}>
+            <div className={styles.motivation__title}>
+              <div className="icon icon__spark" />
+              Motivation
+            </div>
+            <ul className={styles.motivation__list}>
+              <li>Financial reward</li>
+              <li>A willingness to help homeless cats</li>
+              <li>
+                A willingness to own a cat provided someone covers the expenses
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
