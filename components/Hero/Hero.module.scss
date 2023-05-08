@@ -27,6 +27,7 @@
     @include tablet {
       min-height: 28rem;
       background-image: url("../../public/assets/banner_mobile.webp");
+      background-size: contain;
     }
   }
 }
