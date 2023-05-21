@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Card from "./Card";
+import andrei from "../../public/assets/team/andrei.webp";
 import man1 from "../../public/assets/team/man1.png";
 import man2 from "../../public/assets/team/man2.png";
 import woman1 from "../../public/assets/team/woman1.png";
@@ -21,7 +22,7 @@ export default function Team() {
           <Card
             data={{
               name: "Andrei Sucman",
-              img: man1,
+              img: andrei,
               title: "Team Manager",
               about: `Andrei has 3 years of corporate experience in sales and marketing
               and 2 years of entrepreneural experience with ecommerce.`,
