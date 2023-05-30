@@ -3,6 +3,7 @@ import Card from "./Card";
 import andrei from "../../public/assets/team/andrei.webp";
 import man2 from "../../public/assets/team/man2.png";
 import woman1 from "../../public/assets/team/woman1.png";
+import man3 from "../../public/assets/team/man3.png";
 import woman2 from "../../public/assets/team/woman2.png";
 import SectionTitle from "../common/SectionTitle";
 import styles from "./Team.module.scss";
@@ -33,27 +34,6 @@ export default function Team() {
               timeline: {
                 one: { text: "Manager (Glodermal)" },
                 two: { text: "Project Manager (Turkcell)" },
-              },
-            }}
-          />
-          <Card
-            data={{
-              name: "Name Surname",
-              img: woman1,
-              title: "Finance Manager",
-              about: `Name has 5 years of corporate experience in audit, product
-              management and business development.`,
-              desc: `At Purrma Name is responsible for financial compliance,
-              P&L management, and business development.`,
-              links: {
-                ln: "/",
-              },
-              timeline: {
-                one: {
-                  isAct: true,
-                  text: "Business Development Supervisor (Company C)",
-                },
-                two: { text: "Product Manager (Company D)" },
               },
             }}
           />
@@ -96,6 +76,24 @@ export default function Team() {
                   text: "Marketing Specialist (Company A)",
                 },
                 two: { text: "Marketing Specialist (Company B)" },
+              },
+            }}
+          />
+          <Card
+            data={{
+              name: "Name Surname",
+              img: man3,
+              title: "QA Engineer",
+              about: `Name is an experienced quality assurance engineer with and app tester.`,
+              desc: `At Purrma Name is responsible for testing new features and improving user experience.`,
+              links: {
+                ln: "/",
+              },
+              timeline: {
+                one: {
+                  isAct: true,
+                  text: "QA Engineer (Freelance)",
+                },
               },
             }}
           />
