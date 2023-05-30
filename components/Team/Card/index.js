@@ -50,12 +50,14 @@ export default function Card({ data }) {
             </div>
             <span>{timeline?.one?.text}</span>
           </div>
-          <div className={styles.timeline__step}>
-            <div className={styles.timeline__bar}>
-              <div className={styles.timeline__circle} />
+          {timeline?.two?.text && (
+            <div className={styles.timeline__step}>
+              <div className={styles.timeline__bar}>
+                <div className={styles.timeline__circle} />
+              </div>
+              <span>{timeline?.two?.text}</span>
             </div>
-            <span>{timeline?.two?.text}</span>
-          </div>
+          )}
         </div>
       </div>
     </div>
