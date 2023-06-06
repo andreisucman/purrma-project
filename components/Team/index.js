@@ -79,24 +79,6 @@ export default function Team() {
               },
             }}
           />
-          <Card
-            data={{
-              name: "Name Surname",
-              img: man3,
-              title: "QA Engineer",
-              about: `Name is an experienced quality assurance engineer with and app tester.`,
-              desc: `At Purrma Name is responsible for testing new features and improving user experience.`,
-              links: {
-                ln: "/",
-              },
-              timeline: {
-                one: {
-                  isAct: true,
-                  text: "QA Engineer (Freelance)",
-                },
-              },
-            }}
-          />
         </div>
       </div>
     </div>
