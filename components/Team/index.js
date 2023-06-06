@@ -2,7 +2,7 @@ import React from "react";
 import Card from "./Card";
 import andrei from "../../public/assets/team/andrei.webp";
 import daniel from "../../public/assets/team/daniel.webp";
-import woman1 from "../../public/assets/team/woman2.png";
+import woman1 from "../../public/assets/team/woman1.png";
 import SectionTitle from "../common/SectionTitle";
 import styles from "./Team.module.scss";
 
