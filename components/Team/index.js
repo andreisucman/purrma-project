@@ -1,8 +1,7 @@
 import React from "react";
 import Card from "./Card";
 import andrei from "../../public/assets/team/andrei.webp";
-import man2 from "../../public/assets/team/man2.png";
-import woman1 from "../../public/assets/team/woman1.png";
+import daniel from "../../public/assets/team/daniel.webp";
 import man3 from "../../public/assets/team/man3.png";
 import woman2 from "../../public/assets/team/woman2.png";
 import SectionTitle from "../common/SectionTitle";
@@ -41,20 +40,21 @@ export default function Team() {
         <div className={styles.row}>
           <Card
             data={{
-              name: "Name Surname",
-              img: man2,
+              name: "Daniel Blyth",
+              img: daniel,
               title: "IT Manager",
-              about: `Name is a full-stack developer with X years of experience in
+              about: `Daniel is a full-stack developer with 4 years of experience in
               building software with nodejs.`,
-              desc: `At Purrma Name is responsible for the development and
+              desc: `A recognized pro by Github, Daniel is responsible for the development and
               maintainance of the technical infrastructure.`,
               links: {
-                ln: "/",
-                gh: "/",
+                gh: "https://github.com/dblythy",
               },
               timeline: {
-                one: { text: "Software Developer (Company X)" },
-                two: { text: "Software Developer (Company Y)" },
+                one: {
+                  isAct: true,
+                  text: "Software Developer (Parse Platform)",
+                },
               },
             }}
           />

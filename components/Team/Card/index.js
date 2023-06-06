@@ -20,7 +20,7 @@ export default function Card({ data }) {
         <h3 className={styles.block__title}>
           {name}
           <div className={styles.links}>
-            <div className={styles.ln} onClick={() => router.push(links.ln)} />
+            {links?.ln && <div className={styles.ln} onClick={() => router.push(links.ln)} />}
             {links?.gh && (
               <div className={styles.gh} onClick={() => router.push(links.gh)} />
             )}
