@@ -53,7 +53,7 @@ export default function Team() {
               timeline: {
                 one: {
                   isAct: true,
-                  text: "Software Developer (Parse Platform)",
+                  text: "Software Engineer (Parse Platform)",
                 },
               },
             }}
