@@ -6,10 +6,14 @@ import styles from "./Roadmap.module.scss";
 const Roadmap = () => {
   const roadmap = [
     { desc: "Build and test the app", date: "12 Apr 23" },
-    { desc: "Launch organically", isCur: true },
-    { desc: "Launch the first paid ad campaign", isFut: true },
-    { desc: "Onboard the first 1000 sisters", isFut: true },
-    { desc: "Onboard the first 100 mothers", isFut: true },
+    { desc: "Launch in the US", isCur: true, date: "Jun 23" },
+    { desc: "Expand to CA, UK, AU", isFut: true, date: "Sep 23" },
+    {
+      desc: "Release the iOs and Android native apps",
+      isFut: true,
+      date: "Sep 23",
+    },
+    { desc: "Expand to EMEA and ASEAN", isFut: true },
   ];
 
   return (
