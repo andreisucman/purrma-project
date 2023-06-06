@@ -43,8 +43,8 @@ export default function Team() {
               name: "Daniel Blyth",
               img: daniel,
               title: "IT Manager",
-              about: `Daniel is a full-stack developer with 4 years of experience in
-              building software with nodejs.`,
+              about: `Daniel is a Full-Stack developer with 4 years of experience in
+              building software with Nodejs and the Parse Platform.`,
               desc: `A recognized pro by Github, Daniel is responsible for the development and
               maintainance of the technical infrastructure.`,
               links: {
