@@ -7,7 +7,7 @@ const Roadmap = () => {
   const roadmap = [
     { desc: "Build and test the app", date: "Apr 23" },
     { desc: "Find seed capital", isCur: true, date: "Jun 23" },
-    { desc: "Launch in the US", isCur: true, date: "Jun 23" },
+    { desc: "Launch in the US", date: "Jun 23" },
     {
       desc: "Release the native mobile apps",
       date: "Sep 23",
