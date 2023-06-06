@@ -71,7 +71,6 @@ export default function Team() {
               },
               timeline: {
                 one: {
-                  isAct: true,
                   text: "Marketing Specialist (Company A)",
                 },
                 two: { text: "Marketing Specialist (Company B)" },
