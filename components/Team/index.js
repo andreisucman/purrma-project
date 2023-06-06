@@ -2,8 +2,7 @@ import React from "react";
 import Card from "./Card";
 import andrei from "../../public/assets/team/andrei.webp";
 import daniel from "../../public/assets/team/daniel.webp";
-import man3 from "../../public/assets/team/man3.png";
-import woman2 from "../../public/assets/team/woman2.png";
+import woman1 from "../../public/assets/team/woman2.png";
 import SectionTitle from "../common/SectionTitle";
 import styles from "./Team.module.scss";
 
@@ -61,7 +60,7 @@ export default function Team() {
           <Card
             data={{
               name: "Name Surname",
-              img: woman2,
+              img: woman1,
               title: "Marketing Manager",
               about: `Name is a Gen Z influencer and a talented marketing specialist
               with 1.5 years of professional experience.`,
