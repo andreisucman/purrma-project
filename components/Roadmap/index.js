@@ -13,7 +13,7 @@ const Roadmap = () => {
       isFut: true,
     },
     { desc: "Expand to CA, UK, AU", isFut: true, date: "Sep 23" },
-    { desc: "Expand to EMEA and ASEAN", isFut: true },
+    { desc: "Expand to EMEA and ASEAN", isFut: true, date: "Jan 24" },
   ];
 
   return (
