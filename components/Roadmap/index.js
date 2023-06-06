@@ -9,7 +9,7 @@ const Roadmap = () => {
     { desc: "Launch in the US", isCur: true, date: "Jun 23" },
     { desc: "Expand to CA, UK, AU", isFut: true, date: "Sep 23" },
     {
-      desc: "Release the iOs and Android native apps",
+      desc: "Release the native mobile apps",
       isFut: true,
       date: "Sep 23",
     },
