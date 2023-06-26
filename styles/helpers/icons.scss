@@ -73,10 +73,6 @@
     background-image: url("../../public/assets/envelope_white.svg");
   }
 
-  &__team {
-    background-image: url("../../public/assets/team.svg");
-  }
-
   &__map_pin {
     background-image: url("../../public/assets/map_pin.svg");
   }
@@ -179,6 +175,18 @@
 
   &__rocket {
     background-image: url("../../public/assets/rocket.svg");
+  }
+
+  &__concept {
+    background-image: url("../../public/assets/concept.svg");
+  }
+
+  &__people {
+    background-image: url("../../public/assets/people.svg");
+  }
+
+  &__platform {
+    background-image: url("../../public/assets/platform.svg");
   }
 
   &__heart_outline {

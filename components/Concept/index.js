@@ -18,8 +18,8 @@ export default function Concept() {
       <div className={styles.container__wrapper}>
         <SectionTitle
           title={"The concept"}
-          icon={"icon icon__user"}
-          id="project"
+          icon={"icon icon__concept icon_m"}
+          id="concept"
         />
         <div className={styles.block}>
           {deviceType === "mobile" ? (
@@ -38,16 +38,16 @@ export default function Concept() {
                 <div className="icon icon__angel" />
                 Mothers
               </h3>
-              Mothers sponsor the feeding of cats. They are recognized as angels
-              for saving feline lives and receive exclusive non-purchasable items
-              and experiences as a reward for their contributions.
+              Mothers initiate cat feeding. They select type of food the cats
+              will get, the quantity, as well as what type of cats the food
+              should be given to.
             </div>
             <div className={styles.paragraph}>
               <h3 className={styles.paragraph__title}>
                 <div className="icon icon__face" />
                 Sisters
               </h3>
-              Sisters procure the food that mothers have sponsored and deliver it
+              Sisters procure the food that mothers have ordered and deliver it
               to cats for a financial reward that is also covered by mothers.
             </div>
             <div className={styles.paragraph}>

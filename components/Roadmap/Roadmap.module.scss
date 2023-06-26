@@ -2,7 +2,7 @@
 
 .container {
   cursor: default;
-  padding: 2.5rem 0 0;
+  padding: 2.5rem 0 1rem;
 
   display: flex;
   justify-content: center;
@@ -33,7 +33,8 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
+  width: 100%;
 
   margin: 3rem 0 1rem;
   gap: 1rem;

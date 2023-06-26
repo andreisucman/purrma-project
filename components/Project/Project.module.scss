@@ -40,6 +40,24 @@
   gap: 2rem;
   width: 100%;
 
+  &_one {
+    flex-direction: row-reverse;
+  }
+
+  &_three {
+    flex-direction: row-reverse;
+  }
+  
+  &_five {
+    flex-direction: row-reverse;
+  }
+
+  &_one, &_two, &_three, &_five {
+    @include large_mobile {
+      flex-direction: column;
+    }
+  }
+
   @include large_tablet {
     padding: 1rem 1rem 0;
     gap: 1.5rem;
@@ -53,7 +71,7 @@
   }
 
   @include tablet {
-    flex-direction: column-reverse;
+    flex-direction: column;
 
     &:first-child, &:nth-child(3n) {
       flex-direction: column;

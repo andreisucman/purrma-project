@@ -5,16 +5,10 @@ import styles from "./Roadmap.module.scss";
 
 const Roadmap = () => {
   const roadmap = [
-    { desc: "Build and test the app", date: "Apr 23" },
-    { desc: "Find seed capital", isCur: true, date: "Jun 23" },
-    { desc: "Launch in the US", isFut: true, date: "Jun 23" },
-    {
-      desc: "Release the native mobile apps",
-      date: "Sep 23",
-      isFut: true,
-    },
-    { desc: "Expand to CA, UK, AU", isFut: true, date: "Sep 23" },
-    { desc: "Expand to EMEA and ASEAN", isFut: true, date: "Jan 24" },
+    { desc: "Launch in US", isCur: true, date: "Jul 23" },
+    { desc: "Launch in CA", isFut: true, date: "Aug 23" },
+    { desc: "Launch in UK", isFut: true, date: "Sep 23" },
+    { desc: "Launch in EMEA", isFut: true, date: "Sep 23" },
   ];
 
   return (

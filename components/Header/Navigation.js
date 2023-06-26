@@ -26,32 +26,47 @@ export default function Navigation({
       <ul className={styles.container__list}>
         <li
           className={
-            activeLink === "#project"
+            activeLink === "#concept"
               ? `${styles.container__list_item} ${styles.container__list_item_active}`
               : `${styles.container__list_item}`
           }
         >
           <button
             className={styles.container__list_link}
-            onClick={() => handleLocalRedirect("#project")}
+            onClick={() => handleLocalRedirect("#concept")}
           >
-            <div className="icon icon__heart_outline icon_nav" />
-            Project
+            <div className="icon icon__concept icon_nav" />
+            Concept
           </button>
         </li>
         <li
           className={
-            activeLink === "#team"
+            activeLink === "#people"
               ? `${styles.container__list_item} ${styles.container__list_item_active}`
               : `${styles.container__list_item}`
           }
         >
           <button
-            onClick={() => handleLocalRedirect("#team")}
             className={styles.container__list_link}
+            onClick={() => handleLocalRedirect("#people")}
           >
-            <div className="icon icon__team icon_m" />
-            Team
+            <div className="icon icon__people icon_nav" />
+            People
+          </button>
+        </li>
+        <li
+          className={
+            activeLink === "#platform"
+              ? `${styles.container__list_item} ${styles.container__list_item_active}`
+              : `${styles.container__list_item}`
+          }
+        >
+          <button
+            className={styles.container__list_link}
+            onClick={() => handleLocalRedirect("#platform")}
+          >
+            <div className="icon icon__platform icon_nav" />
+            Platform
           </button>
         </li>
         <li

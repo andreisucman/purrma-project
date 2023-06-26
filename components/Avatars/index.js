@@ -8,7 +8,11 @@ export default function Avatars() {
   return (
     <div className={styles.container}>
       <div className={styles.container__wrapper}>
-        <SectionTitle title={"The avatars"} icon={"icon icon__user"} />
+        <SectionTitle
+          title={"The people"}
+          icon={"icon icon__people"}
+          id={"people"}
+        />
         <div className={styles.block}>
           <Image
             height={400}
@@ -26,35 +30,18 @@ export default function Avatars() {
             attaining business goals and achieving financial freedom.
           </p>
           <p className={styles.text}>
-            Her high-paying job at a prestigious firm has allowed her to live a
-            lavish lifestyle, but her passion for feline friends has also made
-            her willing to invest in their health and safety.
+            Her prestigious job at a well-known firm has allowed her to live a
+            lavish lifestyle, but her kind heart and passion for feline friends
+            are making her concerned of their health and safety.
           </p>
           <p className={styles.text}>
-            She treats all cats like her own children and would go to great
+            Sarah treats all cats like her own children and would go to great
             lengths to ensure their wellbeing.
           </p>
           <p className={styles.text}>
             She dreams of a world where all fur babies have a loving home and is
-            ready to support any cause that aims to achieve this.
+            ready to support any sister who can help to achieve this.
           </p>
-          <div className={styles.motivation}>
-            <div className={styles.motivation__title}>
-              <div className="icon icon__spark" />
-              Motivation
-            </div>
-            <ul className={styles.motivation__list}>
-              <li>
-                A strong desire to take care and protect homeless cats and cats
-                in general
-              </li>
-              <li>A willingness to get recognized for saving cats' lives</li>
-              <li>
-                A willingness to get exclusive items and experiences not
-                available for buy
-              </li>
-            </ul>
-          </div>
         </div>
         <div className={styles.block}>
           <Image
@@ -72,7 +59,7 @@ export default function Avatars() {
             />
           </h3>
           <p className={styles.text}>
-            Maria is a hardworking woman who has always dreamt of having a furry
+            Maria is a hardworking person who has always dreamt of having a furry
             companion.
           </p>
           <p className={styles.text}>
@@ -81,28 +68,11 @@ export default function Avatars() {
             unable to afford one.
           </p>
           <p className={styles.text}>
-            Maria is a lively and outgoing person, who enjoys jogging in the park
-            where she often shares the bread from her meals with homeless cats.
-          </p>
-          <p className={styles.text}>
-            As an office clerk at a local business, Maria works hard to make ends
-            meet. But she doesn't lose hope that one day she will be able to
-            afford a cat of her own, and give her all the love and care she
+            As a senior specialist at a local business, Maria works hard to make
+            ends meet. But she doesn't lose hope that one day she will be able to
+            have a cat of her own, and give her all the love and care she
             deserves.
           </p>
-          <div className={styles.motivation}>
-            <div className={styles.motivation__title}>
-              <div className="icon icon__spark" />
-              Motivation
-            </div>
-            <ul className={styles.motivation__list}>
-              <li>Financial reward</li>
-              <li>A willingness to help homeless cats</li>
-              <li>
-                A willingness to own a cat provided someone covers the expenses
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
     </div>
