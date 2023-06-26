@@ -77,7 +77,7 @@ export default function Contact() {
           )}
           <button
             className={styles.form__submit}
-            disable={isLoading ? true : undefined}
+            disabled={isLoading ? true : false}
             type="submit"
           >
             {isLoading ? (

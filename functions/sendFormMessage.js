@@ -13,13 +13,16 @@ export async function sendFormMessage({
     email,
   };
 
-  const res = await fetch("/api/sendEmail", {
+  console.log("BOYD IS", data);
+  const res = await fetch("/api/sendMail", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(data),
   });
+
+  console.log("RES IS", res);
 
   if (res.status === 200) {
     setMessage("Message sent");
