@@ -10,7 +10,7 @@ const CheckApp = () => {
             onClick={() => (window.location.href = "https://purrma.com")}
           >
             <div className="icon icon__rocket" />
-            Return to the app
+            Check out our app
           </div>
         </div>
       </div>

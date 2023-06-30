@@ -38,9 +38,8 @@ export default function Concept() {
                 <div className="icon icon__angel" />
                 Mothers
               </h3>
-              Mothers initiate cat feeding. They select type of food the cats
-              will get, the quantity, as well as what type of cats the food
-              should be given to.
+              Mothers start cat feeding. They select the type of food, the
+              quantity, and the type of cats the food should be given to.
             </div>
             <div className={styles.paragraph}>
               <h3 className={styles.paragraph__title}>
