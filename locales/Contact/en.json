@@ -4,5 +4,7 @@
   "3": "Your email",
   "4": "Subject",
   "5": "Your message",
-  "6": "Send"
+  "6": "Send",
+  "7": "Message sent",
+  "8": "Error while sending email"
 }

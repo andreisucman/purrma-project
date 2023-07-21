@@ -1,14 +1,16 @@
 import React from "react";
 import SectionTitle from "../common/SectionTitle";
 import Row from "./Row";
+import { useTranslation } from "react-i18next";
 import styles from "./Roadmap.module.scss";
 
 const Roadmap = () => {
+  const { t } = useTranslation();
   const roadmap = [
-    { desc: "Launch in TR", isCur: true, date: "Jul 23" },
-    { desc: "Launch in US", isFut: true, date: "Aug 23" },
-    { desc: "Launch in CA", isFut: true, date: "Sep 23" },
-    { desc: "Launch in EMEA", isFut: true, date: "Sep 23" },
+    { desc: t("Roadmap:1"), isCur: true, date: t("Roadmap:date1") },
+    { desc: t("Roadmap:2"), isFut: true, date: t("Roadmap:date2") },
+    { desc: t("Roadmap:3"), isFut: true, date: t("Roadmap:date3") },
+    { desc: t("Roadmap:4"), isFut: true, date: t("Roadmap:date4") },
   ];
 
   return (
@@ -16,7 +18,7 @@ const Roadmap = () => {
       <div className={styles.container__wrapper}>
         <SectionTitle
           icon={"icon icon__map_pin icon_m"}
-          title={"The roadmap"}
+          title={t("Roadmap:0")}
           id="roadmap"
         />
         <div className={styles.content}>

@@ -1,3 +1,5 @@
+import i18n from "i18next";
+
 export async function sendFormMessage({
   subj,
   body,
@@ -6,6 +8,7 @@ export async function sendFormMessage({
   setMessage,
 }) {
   setIsLoading(true);
+  const { t } = i18n;
 
   const data = {
     subject: subj,
@@ -13,7 +16,6 @@ export async function sendFormMessage({
     email,
   };
 
-  console.log("BOYD IS", data);
   const res = await fetch("/api/sendMail", {
     method: "POST",
     headers: {
@@ -22,12 +24,10 @@ export async function sendFormMessage({
     body: JSON.stringify(data),
   });
 
-  console.log("RES IS", res);
-
   if (res.status === 200) {
-    setMessage("Message sent");
+    setMessage(t("Contact:7"));
     setIsLoading(false);
   } else {
-    setMessage(`Error while sending email.`);
+    setMessage(t("Contact:8"));
   }
 }
