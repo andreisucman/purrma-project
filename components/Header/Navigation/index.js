@@ -1,15 +1,15 @@
+import { useTranslation } from "react-i18next";
 import styles from "./Navigation.module.scss";
 
 export default function Navigation({
   menuRef,
   isMenuOpen,
   activeLink,
-  handleRedirect,
   redirectLocally,
-  deviceType,
   router,
-  user,
 }) {
+  const { t } = useTranslation();
+
   function handleLocalRedirect(url) {
     redirectLocally(url, router.pathname !== "/");
   }
@@ -36,7 +36,7 @@ export default function Navigation({
             onClick={() => handleLocalRedirect("#concept")}
           >
             <div className="icon icon__concept icon_nav" />
-            Concept
+            {t("Navigation:1")}
           </button>
         </li>
         <li
@@ -51,7 +51,7 @@ export default function Navigation({
             onClick={() => handleLocalRedirect("#people")}
           >
             <div className="icon icon__people icon_nav" />
-            People
+            {t("Navigation:2")}
           </button>
         </li>
         <li
@@ -66,7 +66,7 @@ export default function Navigation({
             onClick={() => handleLocalRedirect("#platform")}
           >
             <div className="icon icon__platform icon_nav" />
-            Platform
+            {t("Navigation:3")}
           </button>
         </li>
         <li
@@ -81,7 +81,7 @@ export default function Navigation({
             className={styles.container__list_link}
           >
             <div className="icon icon__map_pin icon__nav" />
-            Roadmap
+            {t("Navigation:4")}
           </button>
         </li>
         <li
@@ -99,7 +99,7 @@ export default function Navigation({
               className="icon icon__rocket"
               style={{ backgroundSize: "85%", marginRight: "-0.25rem" }}
             />
-            App
+            {t("Navigation:5")}
           </button>
         </li>
         <li
@@ -117,7 +117,7 @@ export default function Navigation({
               className="icon icon__envelope"
               style={{ backgroundSize: "95%" }}
             />
-            Contact
+            {t("Navigation:6")}
           </button>
         </li>
       </ul>

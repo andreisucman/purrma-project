@@ -1,6 +1,9 @@
+import { useTranslation } from "react-i18next";
 import styles from "./CheckApp.module.scss";
 
 const CheckApp = () => {
+  const { t } = useTranslation();
+
   return (
     <div className={styles.container} id="app">
       <div className={styles.container__wrapper}>
@@ -10,7 +13,7 @@ const CheckApp = () => {
             onClick={() => (window.location.href = "https://purrma.com")}
           >
             <div className="icon icon__rocket" />
-            Check our app
+            {t("CheckApp:1")}
           </div>
         </div>
       </div>

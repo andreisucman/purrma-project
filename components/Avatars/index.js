@@ -2,14 +2,17 @@ import Image from "next/image";
 import mother_portrait from "../../public/assets/portraits/mother_portrait.webp";
 import sister_portrait from "../../public/assets/portraits/sister_portrait.webp";
 import SectionTitle from "../common/SectionTitle";
+import { useTranslation } from "react-i18next";
 import styles from "./Avatars.module.scss";
 
 export default function Avatars() {
+  const { t } = useTranslation();
+
   return (
     <div className={styles.container}>
       <div className={styles.container__wrapper}>
         <SectionTitle
-          title={"The people"}
+          title={t("Avatars:0")}
           icon={"icon icon__people"}
           id={"people"}
         />
@@ -22,26 +25,13 @@ export default function Avatars() {
             alt="mother portrait"
           />
           <h3 className={styles.name}>
-            Meet the Mother
+            {t("Avatars:1")}
             <div className="icon icon__angel icon_b" />
           </h3>
-          <p className={styles.text}>
-            Sarah is a successful businesswoman who has dedicated her life to
-            attaining business goals and achieving financial freedom.
-          </p>
-          <p className={styles.text}>
-            Her prestigious job at a well-known firm has allowed her to live a
-            lavish lifestyle, but her kind heart and passion for feline friends
-            are making her concerned of their health and safety.
-          </p>
-          <p className={styles.text}>
-            Sarah treats all cats like her own children and would go to great
-            lengths to ensure their wellbeing.
-          </p>
-          <p className={styles.text}>
-            She dreams of a world where all fur babies have a loving home and is
-            ready to support any sister who can help to achieve this.
-          </p>
+          <p className={styles.text}>{t("Avatars:2")}</p>
+          <p className={styles.text}>{t("Avatars:3")}</p>
+          <p className={styles.text}>{t("Avatars:4")}</p>
+          <p className={styles.text}>{t("Avatars:5")}</p>
         </div>
         <div className={styles.block}>
           <Image
@@ -52,27 +42,15 @@ export default function Avatars() {
             alt="sister portrait"
           />
           <h3 className={styles.name}>
-            Meet the Sister
+            {t("Avatars:6")}
             <div
               className="icon icon__face icon_b"
               style={{ backgroundSize: "90%" }}
             />
           </h3>
-          <p className={styles.text}>
-            Maria is a hardworking person who has always dreamt of having a furry
-            companion.
-          </p>
-          <p className={styles.text}>
-            Despite of struggling financially, her love for cats has never
-            wavered, but due to the latest surge in cat food prices she has been
-            unable to afford one.
-          </p>
-          <p className={styles.text}>
-            As a senior specialist at a local business, Maria works hard to make
-            ends meet. But she doesn't lose hope that one day she will be able to
-            have a cat of her own, and give her all the love and care she
-            deserves.
-          </p>
+          <p className={styles.text}>{t("Avatars:7")}</p>
+          <p className={styles.text}>{t("Avatars:8")}</p>
+          <p className={styles.text}>{t("Avatars:9")}</p>
         </div>
       </div>
     </div>

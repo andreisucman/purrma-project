@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 import concept from "../../public/assets/concept.webp";
 import concept_mobile from "../../public/assets/concept_mobile.webp";
 import { getDeviceType } from "../../functions/getDeviceType";
@@ -8,6 +9,7 @@ import styles from "./Concept.module.scss";
 
 export default function Concept() {
   const [deviceType, setDeviceType] = useState();
+  const { t } = useTranslation();
 
   useEffect(() => {
     setDeviceType(getDeviceType());
@@ -17,7 +19,7 @@ export default function Concept() {
     <div className={styles.container}>
       <div className={styles.container__wrapper}>
         <SectionTitle
-          title={"The concept"}
+          title={t("Concept:1")}
           icon={"icon icon__concept icon_m"}
           id="concept"
         />
@@ -36,27 +38,23 @@ export default function Concept() {
             <div className={styles.paragraph}>
               <h3 className={styles.paragraph__title}>
                 <div className="icon icon__angel" />
-                Mothers
+                {t("Concept:2")}
               </h3>
-              Mothers start cat feeding. They select the type of food, the
-              quantity, and the type of cats the food should be given to.
+              {t("Concept:3")}
             </div>
             <div className={styles.paragraph}>
               <h3 className={styles.paragraph__title}>
                 <div className="icon icon__face" />
-                Sisters
+                {t("Concept:4")}
               </h3>
-              Sisters procure the food that mothers have ordered and deliver it
-              to cats for a financial reward that is also covered by mothers.
+              {t("Concept:5")}
             </div>
             <div className={styles.paragraph}>
               <h3 className={styles.paragraph__title}>
                 <div className="icon icon__heart_outline" />
-                Purrma
+                {t("Concept:6")}
               </h3>
-              Purrma connects mothers and sisters, checks the quality of each
-              sister's work and features their statistics on a leaderboard and
-              personal account pages.
+              {t("Concept:7")}
             </div>
           </div>
         </div>

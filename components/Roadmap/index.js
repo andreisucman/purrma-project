@@ -5,9 +5,9 @@ import styles from "./Roadmap.module.scss";
 
 const Roadmap = () => {
   const roadmap = [
-    { desc: "Launch in US", isCur: true, date: "Jul 23" },
-    { desc: "Launch in CA", isFut: true, date: "Aug 23" },
-    { desc: "Launch in UK", isFut: true, date: "Sep 23" },
+    { desc: "Launch in TR", isCur: true, date: "Jul 23" },
+    { desc: "Launch in US", isFut: true, date: "Aug 23" },
+    { desc: "Launch in CA", isFut: true, date: "Sep 23" },
     { desc: "Launch in EMEA", isFut: true, date: "Sep 23" },
   ];
 
