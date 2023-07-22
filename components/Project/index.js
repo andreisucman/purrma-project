@@ -1,23 +1,37 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import place_order_pc from "../../public/assets/project/place_order_pc.png";
-import place_order_mobile from "../../public/assets/project/place_order_mobile.png";
-import submit_delivery_pc from "../../public/assets/project/submit_delivery_pc.png";
-import submit_delivery_mobile from "../../public/assets/project/submit_delivery_mobile.png";
-import payout_reward_pc from "../../public/assets/project/payout_reward_pc.png";
-import payout_reward_mobile from "../../public/assets/project/payout_reward_mobile.png";
-import check_quality_pc from "../../public/assets/project/check_quality_pc.png";
-import check_quality_mobile from "../../public/assets/project/check_quality_mobile.png";
-import display_statistics_pc from "../../public/assets/project/display_statistics_pc.png";
-import display_statistics_mobile from "../../public/assets/project/display_statistics_mobile.png";
+import place_order_pc from "../../public/assets/project/en/place_order_pc.png";
+import place_order_pc_tr from "../../public/assets/project/tr/place_order_pc.png";
+import place_order_mobile from "../../public/assets/project/en/place_order_mobile.png";
+import place_order_mobile_tr from "../../public/assets/project/tr/place_order_mobile.png";
+import submit_delivery_pc from "../../public/assets/project/en/submit_delivery_pc.png";
+import submit_delivery_pc_tr from "../../public/assets/project/tr/submit_delivery_pc.png";
+import submit_delivery_mobile from "../../public/assets/project/en/submit_delivery_mobile.png";
+import submit_delivery_mobile_tr from "../../public/assets/project/tr/submit_delivery_mobile.png";
+import payout_reward_pc from "../../public/assets/project/en/payout_reward_pc.png";
+import payout_reward_pc_tr from "../../public/assets/project/tr/payout_reward_pc.png";
+import payout_reward_mobile from "../../public/assets/project/en/payout_reward_mobile.png";
+import payout_reward_mobile_tr from "../../public/assets/project/tr/payout_reward_mobile.png";
+import check_quality_pc from "../../public/assets/project/en/check_quality_pc.png";
+import check_quality_pc_tr from "../../public/assets/project/tr/check_quality_pc.png";
+import check_quality_mobile from "../../public/assets/project/en/check_quality_mobile.png";
+import check_quality_mobile_tr from "../../public/assets/project/tr/check_quality_mobile.png";
+import display_statistics_pc from "../../public/assets/project/en/display_statistics_pc.png";
+import display_statistics_pc_tr from "../../public/assets/project/tr/display_statistics_pc.png";
+import display_statistics_mobile from "../../public/assets/project/en/display_statistics_mobile.png";
+import display_statistics_mobile_tr from "../../public/assets/project/tr/display_statistics_mobile.png";
 import SectionTitle from "../common/SectionTitle";
 import { useTranslation } from "react-i18next";
 import { getDeviceType } from "../../functions/getDeviceType";
+import { useRouter } from "next/router";
 import styles from "./Project.module.scss";
 
 export default function Project() {
   const { t } = useTranslation();
   const [deviceType, setDeviceType] = useState();
+  const router = useRouter();
+
+  const isTr = router.locale === "tr";
 
   useEffect(() => {
     setDeviceType(getDeviceType());
@@ -43,7 +57,7 @@ export default function Project() {
                 className={styles.img}
                 width={"auto"}
                 height={450}
-                src={place_order_mobile}
+                src={isTr ? place_order_mobile_tr : place_order_mobile}
                 alt="purrma take orders"
               />
             ) : (
@@ -51,7 +65,7 @@ export default function Project() {
                 className={styles.img}
                 width={"auto"}
                 height={450}
-                src={place_order_pc}
+                src={isTr ? place_order_pc_tr : place_order_pc}
                 alt="purrma take orders"
               />
             )}
@@ -69,7 +83,7 @@ export default function Project() {
                 className={styles.img}
                 width={"auto"}
                 height={450}
-                src={submit_delivery_mobile}
+                src={isTr ? submit_delivery_mobile_tr : submit_delivery_mobile}
                 alt="purrma take orders"
               />
             ) : (
@@ -77,7 +91,7 @@ export default function Project() {
                 className={styles.img}
                 width={"auto"}
                 height={400}
-                src={submit_delivery_pc}
+                src={isTr ? submit_delivery_pc_tr : submit_delivery_pc}
                 alt="purrma get deliveries"
               />
             )}
@@ -95,7 +109,7 @@ export default function Project() {
                 className={styles.img}
                 width={"auto"}
                 height={450}
-                src={check_quality_mobile}
+                src={isTr ? check_quality_mobile_tr : check_quality_mobile}
                 alt="purrma check quality"
               />
             ) : (
@@ -103,7 +117,7 @@ export default function Project() {
                 className={styles.img}
                 width={"auto"}
                 height={450}
-                src={check_quality_pc}
+                src={isTr ? check_quality_pc_tr : check_quality_pc}
                 alt="purrma check quality"
               />
             )}
@@ -121,7 +135,7 @@ export default function Project() {
                 className={styles.img}
                 width={"auto"}
                 height={450}
-                src={payout_reward_mobile}
+                src={isTr ? payout_reward_mobile_tr : payout_reward_mobile}
                 alt="purrma pay out the reward"
               />
             ) : (
@@ -129,7 +143,7 @@ export default function Project() {
                 className={styles.img}
                 width={"auto"}
                 height={450}
-                src={payout_reward_pc}
+                src={isTr ? payout_reward_pc_tr : payout_reward_pc}
                 alt="purrma pay out the reward"
               />
             )}
@@ -148,7 +162,9 @@ export default function Project() {
                 className={styles.img}
                 width={"auto"}
                 height={450}
-                src={display_statistics_mobile}
+                src={
+                  isTr ? display_statistics_mobile_tr : display_statistics_mobile
+                }
                 alt="purrma check quality"
               />
             ) : (
@@ -156,7 +172,7 @@ export default function Project() {
                 className={styles.img}
                 width={"auto"}
                 height={450}
-                src={display_statistics_pc}
+                src={isTr ? display_statistics_pc_tr : display_statistics_pc}
                 alt="purrma check quality"
               />
             )}

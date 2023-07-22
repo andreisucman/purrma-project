@@ -1,12 +1,21 @@
 import { useTranslation } from "react-i18next";
+import { useRouter } from "next/router";
 import styles from "./Hero.module.scss";
 
 export default function Hero() {
   const { t } = useTranslation();
+  const router = useRouter();
+  const isTr = router.locale === "tr";
 
   return (
     <div className={styles.container}>
-      <div className={styles.container__wrapper}>
+      <div
+        className={
+          isTr
+            ? `${styles.container__wrapper_tr} ${styles.container__wrapper}`
+            : styles.container__wrapper
+        }
+      >
         <div className={styles.slogan}>
           <h1 className={styles.slogan__first}>
             <div className="icon icon__dry_food icon_b" />

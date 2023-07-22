@@ -24,10 +24,21 @@
     background-color: #fff;
     border-radius: 0.5rem;
 
+    
     @include tablet {
       min-height: 28rem;
       background-image: url("../../public/assets/banner_mobile.webp");
       background-size: 90%;
+    }
+
+    &_tr {
+      background-image: url("../../public/assets/banner_tr.png");
+
+      @include tablet {
+        min-height: 28rem;
+        background-image: url("../../public/assets/banner_mobile_tr.png");
+        background-size: 90%;
+      }
     }
   }
 }
