@@ -4,8 +4,10 @@
   "2": "Launch in US",
   "3": "Launch in CA",
   "4": "Launch in EMEA",
+  "5": "Proceed with stage 2",
   "date1": "Jul 23",
   "date2": "Aug 23",
   "date3": "Sep 23",
-  "date4": "Sep 23"
+  "date4": "Sep 23",
+  "date5": "Jan 24"
 }

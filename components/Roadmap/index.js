@@ -11,6 +11,7 @@ const Roadmap = () => {
     { desc: t("Roadmap:2"), isFut: true, date: t("Roadmap:date2") },
     { desc: t("Roadmap:3"), isFut: true, date: t("Roadmap:date3") },
     { desc: t("Roadmap:4"), isFut: true, date: t("Roadmap:date4") },
+    { desc: t("Roadmap:5"), isFut: true, date: t("Roadmap:date5") },
   ];
 
   return (
