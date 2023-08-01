@@ -50,6 +50,7 @@ export default function Project() {
             <h3 className={styles.block__title}>{t("Project:1")}</h3>
             <p className={styles.paragraph}>{t("Project:2")}</p>
             <p className={styles.paragraph}>{t("Project:3")}</p>
+            <p className={styles.paragraph}>{t("Project:3-1")}</p>
           </div>
           <div className={styles.img__div}>
             {deviceType === "mobile" ? (

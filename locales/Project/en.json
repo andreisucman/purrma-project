@@ -3,6 +3,7 @@
   "1": "1. Receive orders",
   "2": "Mothers place orders for feeding cats.",
   "3": "They select the type of food, quantity, and decide on whether this food should be served to stray, adopted, or all cats.",
+  "3-1": "Mothers also decide on the service reward that sisters will get for serving their food to cats.",
   "4": "2. Deliver the food",
   "5": "Sisters serve the food that the mothers have ordered. They record each delivery and upload it to the platform for the quality review.",
   "6": "The sisters get financially rewarded if the review is successful or asked to serve the food again otherwise.",
